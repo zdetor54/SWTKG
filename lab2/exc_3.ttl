@@ -1,0 +1,27 @@
+@prefix temp: <file:///C:/Users/user/Dropbox/MSc%20Data%20Science/Semantic%20Web%20and%20Knowledge%20Graphs/week%202/python/lab2/ernesto_foaf.rdf#me> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dpo: <http://dbpedia.org/ontology/> .
+
+temp:zac a foaf:Person ;        
+    foaf:family_name    "Detorakis" ;
+    foaf:givenname      "Zac";
+    dpo:city            "London";
+    dpo:countryOfBirth  "Athens";
+    dpo:language [  rdf:first "Greek";
+                    rdf:rest [
+                        rdf:first "English";
+                        rdf:rest rdf:nil    ]
+
+                 ] ;
+    dpo:employer [ a foaf:employer ;
+                        foaf:name "Bjss";
+                        foaf:startdate "2019-04-01";
+                        foaf:enddate "2020-12-31"
+                 ],
+                 [ a foaf:employer ;
+                        foaf:name "Markit";
+                        foaf:startdate "2015-04-01";
+                        foaf:enddate "2019-12-31"
+                 ].

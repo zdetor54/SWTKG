@@ -1,0 +1,50 @@
+Statement 1 :Father rdfs:subClassOf :Person .
+True
+:Father     rdfs:subClassOf     :Parent ;    -- P
+:Parent     rdfs:subClassOf     :Person .    -- P
+:Father     rdfs:subClassOf     :Person .    -- 2,3, rdfs11
+
+
+Statement 2 :Woman rdfs:subClassOf :Person .
+True
+:Woman      rdfs:subClassOf     :Person .    -- P
+
+
+Statement 3 :Juliet a :Person .
+True
+:Ann        :hasMother         :Juliet .    -- p
+:hasMother  rdfs:range         :Mother .    -- p
+:Juliet     a                  :Mother .    -- 12,11,rdfs3
+:Mother     rdfs:subClassOf    :Parent ;    -- p
+:Parent     rdfs:subClassOf    :Person .    -- p
+:Mother     rdfs:subClassOf    :Person .    -- 14,25,rdfs11
+:Juliet     a                  :Person .    -- 13,16,rdfs9
+
+
+Statement 4 :Ann a :Child .
+False
+
+
+Statement 5 :Ann :isChildOf :Carl .
+False
+
+
+Statement 6 :Ann :hasParent :Juliet .
+True
+:Ann        :hasMother         :Juliet .    -- p
+:hasMother  rdfs:subPropertyOf :hasParent ; -- p
+:Ann        :hasParent         :Juliet .    -- 30,29,rdfs7 
+
+
+Statement 7 rdfs:range rdf:type rdfs:Resource .
+True
+rdfs:range      a               rdf:Property ;  --p
+rdf:Property    rdfs:subClassOf rdfs:Resource . --p
+rdfs:range      a               rdfs:Resource . -- 32,33,rdfs9
+
+
+Statement 8 :Mother rdfs:subClassOf :Person .
+True
+:Mother     rdfs:subClassOf    :Parent ;    -- p
+:Parent     rdfs:subClassOf    :Person .    -- p
+:Mother     rdfs:subClassOf    :Person .    -- 38,39,rdfs11

@@ -1,0 +1,26 @@
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<file:///C:/Users/zacharias.detorakis/Desktop/Personal/MSc%20Data%20Science/Knowledge%20Graphs/lab2/zac_foaf.rdf> a foaf:PersonalProfileDocument ;
+    admin:errorReportsTo <mailto:leigh@ldodds.com> ;
+    admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+    foaf:maker <file:///C:/Users/zacharias.detorakis/Desktop/Personal/MSc%20Data%20Science/Knowledge%20Graphs/lab2/zac_foaf.rdf#me> ;
+    foaf:primaryTopic <file:///C:/Users/zacharias.detorakis/Desktop/Personal/MSc%20Data%20Science/Knowledge%20Graphs/lab2/zac_foaf.rdf#me> .
+
+<file:///C:/Users/zacharias.detorakis/Desktop/Personal/MSc%20Data%20Science/Knowledge%20Graphs/lab2/zac_foaf.rdf#you> a foaf:Person ;
+    foaf:knows [ a foaf:Person ;
+            rdfs:seeAlso <https://sws.ifi.uio.no/vocab/ernesto_foaf.rdf> ;
+            foaf:mbox_sha1sum "7ab5123ea8acb0ec79f439ccb1c45ac55a049981" ;
+            foaf:name "ernesto" ] ;
+    foaf:phone <file:///C:/Users/zacharias.detorakis/Desktop/Personal/MSc%20Data%20Science/Knowledge%20Graphs/lab2/tel:07429443581> .
+
+<file:///C:/Users/zacharias.detorakis/Desktop/Personal/MSc%20Data%20Science/Knowledge%20Graphs/lab2/zac_foaf.rdf#me> a foaf:Person ;
+    foaf:family_name "Detorakis" ;
+    foaf:givenname "Zac" ;
+    foaf:homepage <file:///C:/Users/zacharias.detorakis/Desktop/Personal/MSc%20Data%20Science/Knowledge%20Graphs/lab2/google.co.uk> ;
+    foaf:mbox_sha1sum "28836e0177373900196d46196f326a085cba3746" ;
+    foaf:name "Zac Detorakis" ;
+    foaf:nick "Pedigree" ;
+    foaf:title "Dr" .
+

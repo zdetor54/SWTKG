@@ -1,0 +1,11 @@
+@prefix city: <http://www.example.org/university/london/city#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+city:ernesto a foaf:Person ;
+    city:teaches city:inm713 ;
+    foaf:age 35 ;
+    foaf:name "Ernesto Jimenez-Ruiz"^^xsd:string .
+
+city:inm713 a city:Module .
+

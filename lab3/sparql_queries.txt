@@ -1,0 +1,101 @@
+Query 1 Query to return Eve’s grandfather.
+SELECT ?name WHERE {
+  ttr:Eve dbo:parent [dbo:parent ?gp] .
+  ?gp dbp:name ?name
+}
+
+Query 2 Things that are dogs with color and sex. (Tip: give a look to the data in playground.ttl)
+
+SELECT ?thing WHERE {
+  ?thing 	a tto:Dog;
+			tto:sex ?sex;
+			tto:color ?color.
+}
+
+Query 3 This query shows pets with their owners (Tip: owner may not exist)
+
+SELECT ?pet_name ?owner_name WHERE {
+  ?animal 	a [rdfs:subClassOf tto:Animal];
+  			dbp:name ?pet_name.
+  OPTIONAL {
+	[a dbo:Person]
+			tto:pet ?animal;
+			dbp:name ?owner_name.
+  }
+}
+
+
+SELECT ?pet_name ?owner_name WHERE {
+  ?animal 	a [rdfs:subClassOf tto:Animal];
+  			dbp:name ?pet_name.
+  ?owner 	tto:pet ?animal;
+		 	dbp:name ?owner_name.
+}
+
+Query 4 Select people with their gender and birth date ordered by gender and birth date (oldest first).
+SELECT ?name ?gender ?dob WHERE{
+  ?person 	a dbo:Person;
+			dbp:name ?name;
+			tto:sex ?gender;
+			dbp:birthDate ?dob.
+}
+ORDER BY ?dob ?gender
+
+
+NOBEL
+
+Query 1 Find all the Nobel Laureates from the UK.
+
+SELECT ?laur ?label WHERE {
+?laur rdf:type nobel:Laureate;
+  dbpedia-owl:birthPlace / rdfs:label "United Kingdom";
+  rdfs:label ?label .
+}
+
+Query 2 Find all the Nobel Laureates who are female and were born after 1949. (Tip: use the function year())
+SELECT ?label ?gender year(?dob) WHERE {
+?laur rdf:type nobel:Laureate;
+     rdfs:label ?label;
+     foaf:gender ?gender;
+     dbpprop:dateOfBirth ?dob.
+FILTER (STR(?gender)="female").
+FILTER (YEAR(?dob)>1949).
+}
+ORDER BY DESC(year(?dob))
+
+Query 3 List all the Nobel Laureates ordering them by discipline for which they were awarded the prize. List the names in alphabetical order.
+SELECT DISTINCT ?catlabel ?laurlabel
+WHERE { 
+  ?laur rdf:type nobel:Laureate . 
+  ?laur rdfs:label ?laurlabel . 
+  ?laur foaf:gender "female" . 
+  ?laur nobel:laureateAward ?award . 
+  ?award nobel:category ?category.
+  ?category rdfs:label ?catlabel.
+}
+ORDER BY ?category ?laurlabel 
+
+
+Query 4 Find all the Nobel Laureates born in the US who share the award with someone else. (Tip: use the function xsd:integer())
+SELECT ?label ?award ?share WHERE {
+?laur rdf:type nobel:Laureate;
+  dbpedia-owl:birthPlace ?bp .
+?bp a dbpedia-owl:Country;
+  rdfs:label "USA".
+?laur rdfs:label ?label .
+?laur nobel:laureateAward ?award.
+?award nobel:share ?share.
+FILTER(xsd:integer(?share)>1).
+}
+
+Query 5 List the Laureates born in Italy or Spain.
+SELECT ?label ?bp WHERE {
+?laur rdf:type nobel:Laureate;
+  dbpedia-owl:birthPlace ?bp .
+?bp a dbpedia-owl:Country;
+{?bp rdfs:label "Spain".}
+UNION
+{?bp rdfs:label "Italy".}
+?laur rdfs:label ?label .
+}
+ORDER BY ?bp 
