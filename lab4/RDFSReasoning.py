@@ -21,6 +21,22 @@ def RDFSInference():
     print("Saving extended graph'")
     g.serialize(destination='lab4_inference.ttl', format='ttl')
     
-    
-    
-RDFSInference()
+def queryLocalGraph(file):
+    g = Graph()
+    g.parse(file,format="ttl")
+    print(f"file: {file} has been loaded")
+    # print(g.serialize(format="turtle").decode("utf-8"))
+
+    qres = g.query(
+    """ask {:Ann a :Child .}""")
+
+
+    for row in qres:
+        #Row is a list of matched RDF terms: URIs, literals or blank nodes
+        print(f"{(str(row))}")
+
+
+
+
+queryLocalGraph("lab4_inference.ttl")
+# RDFSInference()
