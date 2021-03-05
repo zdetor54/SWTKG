@@ -1,0 +1,1019 @@
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:Ahmadābād a ex:city ;
+    ex:admin_name "Gujarāt" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Ahmadabad" ;
+    ex:lattitude 2.303e+01 ;
+    ex:longitude 7.258e+01 ;
+    ex:name "Ahmadābād" ;
+    ex:population 7410000 .
+
+ex:Angola a ex:country ;
+    ex:has_capital ex:Luanda ;
+    ex:iso2_code "AO" ;
+    ex:iso3_code "AGO" .
+
+ex:Argentina a ex:country ;
+    ex:has_capital ex:Buenos_Aires ;
+    ex:iso2_code "AR" ;
+    ex:iso3_code "ARG" .
+
+ex:Bangalore a ex:city ;
+    ex:admin_name "Karnātaka" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Bangalore" ;
+    ex:lattitude 1.29699e+01 ;
+    ex:longitude 7.7598e+01 ;
+    ex:name "Bangalore" ;
+    ex:population 13707000 .
+
+ex:Bangladesh a ex:country ;
+    ex:has_capital ex:Dhaka ;
+    ex:iso2_code "BD" ;
+    ex:iso3_code "BGD" .
+
+ex:Baoding a ex:city ;
+    ex:admin_name "Hebei" ;
+    ex:city_ascii "Baoding" ;
+    ex:lattitude 3.88671e+01 ;
+    ex:longitude 1.154845e+02 ;
+    ex:name "Baoding" ;
+    ex:population 10700000 .
+
+ex:Bijie a ex:city ;
+    ex:admin_name "Guizhou" ;
+    ex:city_ascii "Bijie" ;
+    ex:lattitude 2.73019e+01 ;
+    ex:longitude 1.052863e+02 ;
+    ex:name "Bijie" ;
+    ex:population 6537498 .
+
+ex:Brazil a ex:country ;
+    ex:iso2_code "BR" ;
+    ex:iso3_code "BRA" .
+
+ex:Cangzhou a ex:city ;
+    ex:admin_name "Hebei" ;
+    ex:city_ascii "Cangzhou" ;
+    ex:lattitude 3.83037e+01 ;
+    ex:longitude 1.168452e+02 ;
+    ex:name "Cangzhou" ;
+    ex:population 6800000 .
+
+ex:Changchun a ex:city ;
+    ex:admin_name "Jilin" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Changchun" ;
+    ex:lattitude 4.39e+01 ;
+    ex:longitude 1.252e+02 ;
+    ex:name "Changchun" ;
+    ex:population 7674439 .
+
+ex:Changsha a ex:city ;
+    ex:admin_name "Hunan" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Changsha" ;
+    ex:lattitude 2.81987e+01 ;
+    ex:longitude 1.129709e+02 ;
+    ex:name "Changsha" ;
+    ex:population 7044118 .
+
+ex:Chengdu a ex:city ;
+    ex:admin_name "Sichuan" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Chengdu" ;
+    ex:lattitude 3.06636e+01 ;
+    ex:longitude 1.040667e+02 ;
+    ex:name "Chengdu" ;
+    ex:population 11309000 .
+
+ex:Chennai a ex:city ;
+    ex:admin_name "Tamil Nādu" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Chennai" ;
+    ex:lattitude 1.30825e+01 ;
+    ex:longitude 8.0275e+01 ;
+    ex:name "Chennai" ;
+    ex:population 11324000 .
+
+ex:Chicago a ex:city ;
+    ex:admin_name "Illinois" ;
+    ex:city_ascii "Chicago" ;
+    ex:lattitude 4.18373e+01 ;
+    ex:longitude -8.76862e+01 ;
+    ex:name "Chicago" ;
+    ex:population 8604203 .
+
+ex:Chile a ex:country ;
+    ex:has_capital ex:Santiago ;
+    ex:iso2_code "CL" ;
+    ex:iso3_code "CHL" .
+
+ex:China a ex:country ;
+    ex:has_capital ex:Beijing ;
+    ex:iso2_code "CN" ;
+    ex:iso3_code "CHN" .
+
+ex:Chongqing a ex:city ;
+    ex:admin_name "Chongqing" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Chongqing" ;
+    ex:lattitude 2.955e+01 ;
+    ex:longitude 1.065069e+02 ;
+    ex:name "Chongqing" ;
+    ex:population 7739000 .
+
+ex:Colombia a ex:country ;
+    ex:has_capital ex:Bogotá ;
+    ex:iso2_code "CO" ;
+    ex:iso3_code "COL" .
+
+<http://example.org/Congo_(Kinshasa)> a ex:country ;
+    ex:has_capital ex:Kinshasa ;
+    ex:iso2_code "CD" ;
+    ex:iso3_code "COD" .
+
+ex:Delhi a ex:city ;
+    ex:admin_name "Delhi" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Delhi" ;
+    ex:lattitude 2.866e+01 ;
+    ex:longitude 7.723e+01 ;
+    ex:name "Delhi" ;
+    ex:population 29617000 .
+
+ex:Dongguan a ex:city ;
+    ex:admin_name "Guangdong" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Dongguan" ;
+    ex:lattitude 2.30475e+01 ;
+    ex:longitude 1.137493e+02 ;
+    ex:name "Dongguan" ;
+    ex:population 7981000 .
+
+ex:Egypt a ex:country ;
+    ex:has_capital ex:Cairo ;
+    ex:iso2_code "EG" ;
+    ex:iso3_code "EGY" .
+
+ex:Foshan a ex:city ;
+    ex:admin_name "Guangdong" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Foshan" ;
+    ex:lattitude 2.30292e+01 ;
+    ex:longitude 1.131056e+02 ;
+    ex:name "Foshan" ;
+    ex:population 7194311 .
+
+ex:France a ex:country ;
+    ex:has_capital ex:Paris ;
+    ex:iso2_code "FR" ;
+    ex:iso3_code "FRA" .
+
+ex:Fuyang a ex:city ;
+    ex:admin_name "Anhui" ;
+    ex:city_ascii "Fuyang" ;
+    ex:lattitude 3.28986e+01 ;
+    ex:longitude 1.158045e+02 ;
+    ex:name "Fuyang" ;
+    ex:population 8360000 .
+
+ex:Ganzhou a ex:city ;
+    ex:admin_name "Jiangxi" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Ganzhou" ;
+    ex:lattitude 2.58292e+01 ;
+    ex:longitude 1.149336e+02 ;
+    ex:name "Ganzhou" ;
+    ex:population 8677600 .
+
+ex:Guangzhou a ex:city ;
+    ex:admin_name "Guangdong" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Guangzhou" ;
+    ex:lattitude 2.31288e+01 ;
+    ex:longitude 1.13259e+02 ;
+    ex:name "Guangzhou" ;
+    ex:population 20902000 .
+
+ex:Handan a ex:city ;
+    ex:admin_name "Hebei" ;
+    ex:city_ascii "Handan" ;
+    ex:lattitude 3.66116e+01 ;
+    ex:longitude 1.144894e+02 ;
+    ex:name "Handan" ;
+    ex:population 8499000 .
+
+ex:Hangzhou a ex:city ;
+    ex:admin_name "Zhejiang" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Hangzhou" ;
+    ex:lattitude 3.025e+01 ;
+    ex:longitude 1.201675e+02 ;
+    ex:name "Hangzhou" ;
+    ex:population 6446000 .
+
+ex:Hefei a ex:city ;
+    ex:admin_name "Anhui" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Hefei" ;
+    ex:lattitude 3.18639e+01 ;
+    ex:longitude 1.172808e+02 ;
+    ex:name "Hefei" ;
+    ex:population 7457027 .
+
+ex:Hengyang a ex:city ;
+    ex:admin_name "Hunan" ;
+    ex:city_ascii "Hengyang" ;
+    ex:lattitude 2.68968e+01 ;
+    ex:longitude 1.125857e+02 ;
+    ex:name "Hengyang" ;
+    ex:population 7148344 .
+
+ex:Heze a ex:city ;
+    ex:admin_name "Shandong" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Heze" ;
+    ex:lattitude 3.52333e+01 ;
+    ex:longitude 1.154333e+02 ;
+    ex:name "Heze" ;
+    ex:population 8750000 .
+
+ex:Ho_Chi_Minh_City a ex:city ;
+    ex:admin_name "Hồ Chí Minh" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Ho Chi Minh City" ;
+    ex:lattitude 1.08167e+01 ;
+    ex:longitude 1.066333e+02 ;
+    ex:name "Ho Chi Minh City" ;
+    ex:population 13312000 .
+
+ex:Hong_Kong a ex:city,
+        ex:country ;
+    ex:admin_name "NaN"^^xsd:double ;
+    ex:city_ascii "Hong Kong" ;
+    ex:iso2_code "HK" ;
+    ex:iso3_code "HKG" ;
+    ex:lattitude 2.2305e+01 ;
+    ex:longitude 1.14185e+02 ;
+    ex:name "Hong Kong" ;
+    ex:population 7347000 .
+
+ex:Huanggang a ex:city ;
+    ex:admin_name "Hubei" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Huanggang" ;
+    ex:lattitude 3.045e+01 ;
+    ex:longitude 1.14875e+02 ;
+    ex:name "Huanggang" ;
+    ex:population 6667000 .
+
+ex:Hyderābād a ex:city ;
+    ex:admin_name "Telangana" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Hyderabad" ;
+    ex:lattitude 1.73667e+01 ;
+    ex:longitude 7.84667e+01 ;
+    ex:name "Hyderābād" ;
+    ex:population 9746000 .
+
+ex:India a ex:country ;
+    ex:iso2_code "IN" ;
+    ex:iso3_code "IND" .
+
+ex:Indonesia a ex:country ;
+    ex:has_capital ex:Jakarta ;
+    ex:iso2_code "ID" ;
+    ex:iso3_code "IDN" .
+
+ex:Iran a ex:country ;
+    ex:has_capital ex:Tehran ;
+    ex:iso2_code "IR" ;
+    ex:iso3_code "IRN" .
+
+ex:Istanbul a ex:city ;
+    ex:admin_name "İstanbul" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Istanbul" ;
+    ex:lattitude 4.101e+01 ;
+    ex:longitude 2.89603e+01 ;
+    ex:name "Istanbul" ;
+    ex:population 15154000 .
+
+ex:Japan a ex:country ;
+    ex:has_capital ex:Tokyo ;
+    ex:iso2_code "JP" ;
+    ex:iso3_code "JPN" .
+
+ex:Jining a ex:city ;
+    ex:admin_name "Shandong" ;
+    ex:city_ascii "Jining" ;
+    ex:lattitude 3.54e+01 ;
+    ex:longitude 1.165667e+02 ;
+    ex:name "Jining" ;
+    ex:population 8023000 .
+
+ex:Karachi a ex:city ;
+    ex:admin_name "Sindh" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Karachi" ;
+    ex:lattitude 2.486e+01 ;
+    ex:longitude 6.701e+01 ;
+    ex:name "Karachi" ;
+    ex:population 14835000 .
+
+ex:Kolkāta a ex:city ;
+    ex:admin_name "West Bengal" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Kolkata" ;
+    ex:lattitude 2.25411e+01 ;
+    ex:longitude 8.83378e+01 ;
+    ex:name "Kolkāta" ;
+    ex:population 17560000 .
+
+<http://example.org/Korea,_South> a ex:country ;
+    ex:has_capital ex:Seoul ;
+    ex:iso2_code "KR" ;
+    ex:iso3_code "KOR" .
+
+ex:Kunming a ex:city ;
+    ex:admin_name "Yunnan" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Kunming" ;
+    ex:lattitude 2.50433e+01 ;
+    ex:longitude 1.027061e+02 ;
+    ex:name "Kunming" ;
+    ex:population 6250000 .
+
+ex:Lagos a ex:city ;
+    ex:admin_name "Lagos" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Lagos" ;
+    ex:lattitude 6.45e+00 ;
+    ex:longitude 3.4e+00 ;
+    ex:name "Lagos" ;
+    ex:population 15279000 .
+
+ex:Lahore a ex:city ;
+    ex:admin_name "Punjab" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Lahore" ;
+    ex:lattitude 3.15497e+01 ;
+    ex:longitude 7.43436e+01 ;
+    ex:name "Lahore" ;
+    ex:population 11021000 .
+
+ex:Linyi a ex:city ;
+    ex:admin_name "Shandong" ;
+    ex:city_ascii "Linyi" ;
+    ex:lattitude 3.50606e+01 ;
+    ex:longitude 1.183425e+02 ;
+    ex:name "Linyi" ;
+    ex:population 10820000 .
+
+ex:Los_Angeles a ex:city ;
+    ex:admin_name "California" ;
+    ex:city_ascii "Los Angeles" ;
+    ex:lattitude 3.41139e+01 ;
+    ex:longitude -1.184068e+02 ;
+    ex:name "Los Angeles" ;
+    ex:population 12750807 .
+
+ex:Luoyang a ex:city ;
+    ex:admin_name "Henan" ;
+    ex:city_ascii "Luoyang" ;
+    ex:lattitude 3.46587e+01 ;
+    ex:longitude 1.124245e+02 ;
+    ex:name "Luoyang" ;
+    ex:population 6549941 .
+
+<http://example.org/Lu’an> a ex:city ;
+    ex:admin_name "Anhui" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Lu'an" ;
+    ex:lattitude 3.17542e+01 ;
+    ex:longitude 1.165078e+02 ;
+    ex:name "Lu’an" ;
+    ex:population 6090000 .
+
+ex:Malaysia a ex:country ;
+    ex:has_capital ex:Kuala_Lumpur ;
+    ex:iso2_code "MY" ;
+    ex:iso3_code "MYS" .
+
+ex:Maoming a ex:city ;
+    ex:admin_name "Guangdong" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Maoming" ;
+    ex:lattitude 2.16618e+01 ;
+    ex:longitude 1.109178e+02 ;
+    ex:name "Maoming" ;
+    ex:population 6706000 .
+
+ex:Mexico a ex:country ;
+    ex:has_capital ex:Mexico_City ;
+    ex:iso2_code "MX" ;
+    ex:iso3_code "MEX" .
+
+ex:Miami a ex:city ;
+    ex:admin_name "Florida" ;
+    ex:city_ascii "Miami" ;
+    ex:lattitude 2.57839e+01 ;
+    ex:longitude -8.02102e+01 ;
+    ex:name "Miami" ;
+    ex:population 6445545 .
+
+ex:Mumbai a ex:city ;
+    ex:admin_name "Mahārāshtra" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Mumbai" ;
+    ex:lattitude 1.89667e+01 ;
+    ex:longitude 7.28333e+01 ;
+    ex:name "Mumbai" ;
+    ex:population 23355000 .
+
+ex:Nagoya a ex:city ;
+    ex:admin_name "Aichi" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Nagoya" ;
+    ex:lattitude 3.51167e+01 ;
+    ex:longitude 1.369333e+02 ;
+    ex:name "Nagoya" ;
+    ex:population 9113000 .
+
+ex:Nanchong a ex:city ;
+    ex:admin_name "Sichuan" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Nanchong" ;
+    ex:lattitude 3.07991e+01 ;
+    ex:longitude 1.060784e+02 ;
+    ex:name "Nanchong" ;
+    ex:population 6183000 .
+
+ex:Nanjing a ex:city ;
+    ex:admin_name "Jiangsu" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Nanjing" ;
+    ex:lattitude 3.205e+01 ;
+    ex:longitude 1.187667e+02 ;
+    ex:name "Nanjing" ;
+    ex:population 7496000 .
+
+ex:Nanning a ex:city ;
+    ex:admin_name "Guangxi" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Nanning" ;
+    ex:lattitude 2.28192e+01 ;
+    ex:longitude 1.08315e+02 ;
+    ex:name "Nanning" ;
+    ex:population 7153300 .
+
+ex:Nantong a ex:city ;
+    ex:admin_name "Jiangsu" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Nantong" ;
+    ex:lattitude 3.19829e+01 ;
+    ex:longitude 1.208873e+02 ;
+    ex:name "Nantong" ;
+    ex:population 7282835 .
+
+ex:Nanyang a ex:city ;
+    ex:admin_name "Henan" ;
+    ex:city_ascii "Nanyang" ;
+    ex:lattitude 3.29987e+01 ;
+    ex:longitude 1.125292e+02 ;
+    ex:name "Nanyang" ;
+    ex:population 12010000 .
+
+ex:New_York a ex:city ;
+    ex:admin_name "New York" ;
+    ex:city_ascii "New York" ;
+    ex:lattitude 4.06943e+01 ;
+    ex:longitude -7.39249e+01 ;
+    ex:name "New York" ;
+    ex:population 18713220 .
+
+ex:Nigeria a ex:country ;
+    ex:iso2_code "NG" ;
+    ex:iso3_code "NGA" .
+
+ex:Ningbo a ex:city ;
+    ex:admin_name "Zhejiang" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Ningbo" ;
+    ex:lattitude 2.9875e+01 ;
+    ex:longitude 1.215492e+02 ;
+    ex:name "Ningbo" ;
+    ex:population 7639000 .
+
+ex:Onitsha a ex:city ;
+    ex:admin_name "Anambra" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Onitsha" ;
+    ex:lattitude 6.1667e+00 ;
+    ex:longitude 6.7833e+00 ;
+    ex:name "Onitsha" ;
+    ex:population 7635000 .
+
+ex:Pakistan a ex:country ;
+    ex:iso2_code "PK" ;
+    ex:iso3_code "PAK" .
+
+ex:Peru a ex:country ;
+    ex:has_capital ex:Lima ;
+    ex:iso2_code "PE" ;
+    ex:iso3_code "PER" .
+
+ex:Philippines a ex:country ;
+    ex:has_capital ex:Manila ;
+    ex:iso2_code "PH" ;
+    ex:iso3_code "PHL" .
+
+ex:Pune a ex:city ;
+    ex:admin_name "Mahārāshtra" ;
+    ex:city_ascii "Pune" ;
+    ex:lattitude 1.85196e+01 ;
+    ex:longitude 7.38553e+01 ;
+    ex:name "Pune" ;
+    ex:population 7764000 .
+
+ex:Quanzhou a ex:city ;
+    ex:admin_name "Fujian" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Quanzhou" ;
+    ex:lattitude 2.49139e+01 ;
+    ex:longitude 1.185858e+02 ;
+    ex:name "Quanzhou" ;
+    ex:population 6480000 .
+
+ex:Rio_de_Janeiro a ex:city ;
+    ex:admin_name "Rio de Janeiro" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Rio de Janeiro" ;
+    ex:lattitude -2.29083e+01 ;
+    ex:longitude -4.31964e+01 ;
+    ex:name "Rio de Janeiro" ;
+    ex:population 12272000 .
+
+ex:Russia a ex:country ;
+    ex:has_capital ex:Moscow ;
+    ex:iso2_code "RU" ;
+    ex:iso3_code "RUS" .
+
+ex:Saudi_Arabia a ex:country ;
+    ex:has_capital ex:Riyadh ;
+    ex:iso2_code "SA" ;
+    ex:iso3_code "SAU" .
+
+ex:Shanghai a ex:city ;
+    ex:admin_name "Shanghai" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Shanghai" ;
+    ex:lattitude 3.11667e+01 ;
+    ex:longitude 1.214667e+02 ;
+    ex:name "Shanghai" ;
+    ex:population 22120000 .
+
+ex:Shangrao a ex:city ;
+    ex:admin_name "Jiangxi" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Shangrao" ;
+    ex:lattitude 2.84419e+01 ;
+    ex:longitude 1.179633e+02 ;
+    ex:name "Shangrao" ;
+    ex:population 6579714 .
+
+ex:Shaoyang a ex:city ;
+    ex:admin_name "Hunan" ;
+    ex:city_ascii "Shaoyang" ;
+    ex:lattitude 2.72418e+01 ;
+    ex:longitude 1.114725e+02 ;
+    ex:name "Shaoyang" ;
+    ex:population 7071000 .
+
+ex:Shenyang a ex:city ;
+    ex:admin_name "Liaoning" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Shenyang" ;
+    ex:lattitude 4.18039e+01 ;
+    ex:longitude 1.234258e+02 ;
+    ex:name "Shenyang" ;
+    ex:population 7105000 .
+
+ex:Shenzhen a ex:city ;
+    ex:admin_name "Guangdong" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Shenzhen" ;
+    ex:lattitude 2.2535e+01 ;
+    ex:longitude 1.14054e+02 ;
+    ex:name "Shenzhen" ;
+    ex:population 15929000 .
+
+ex:Shijiazhuang a ex:city ;
+    ex:admin_name "Hebei" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Shijiazhuang" ;
+    ex:lattitude 3.80422e+01 ;
+    ex:longitude 1.145086e+02 ;
+    ex:name "Shijiazhuang" ;
+    ex:population 10784600 .
+
+ex:Sudan a ex:country ;
+    ex:has_capital ex:Khartoum ;
+    ex:iso2_code "SD" ;
+    ex:iso3_code "SDN" .
+
+ex:São_Paulo a ex:city ;
+    ex:admin_name "São Paulo" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Sao Paulo" ;
+    ex:lattitude -2.35504e+01 ;
+    ex:longitude -4.66339e+01 ;
+    ex:name "São Paulo" ;
+    ex:population 22046000 .
+
+ex:Tangshan a ex:city ;
+    ex:admin_name "Hebei" ;
+    ex:city_ascii "Tangshan" ;
+    ex:lattitude 3.96292e+01 ;
+    ex:longitude 1.181742e+02 ;
+    ex:name "Tangshan" ;
+    ex:population 7100000 .
+
+ex:Tanzania a ex:country ;
+    ex:has_capital ex:Dar_es_Salaam ;
+    ex:iso2_code "TZ" ;
+    ex:iso3_code "TZA" .
+
+ex:Thailand a ex:country ;
+    ex:has_capital ex:Bangkok ;
+    ex:iso2_code "TH" ;
+    ex:iso3_code "THA" .
+
+ex:Tianjin a ex:city ;
+    ex:admin_name "Tianjin" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Tianjin" ;
+    ex:lattitude 3.91467e+01 ;
+    ex:longitude 1.172056e+02 ;
+    ex:name "Tianjin" ;
+    ex:population 10800000 .
+
+ex:Tongshan a ex:city ;
+    ex:admin_name "Jiangsu" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Tongshan" ;
+    ex:lattitude 3.4261e+01 ;
+    ex:longitude 1.171859e+02 ;
+    ex:name "Tongshan" ;
+    ex:population 8669000 .
+
+ex:Turkey a ex:country ;
+    ex:iso2_code "TR" ;
+    ex:iso3_code "TUR" .
+
+ex:United_Kingdom a ex:country ;
+    ex:has_capital ex:London ;
+    ex:iso2_code "GB" ;
+    ex:iso3_code "GBR" .
+
+ex:United_States a ex:country ;
+    ex:iso2_code "US" ;
+    ex:iso3_code "USA" .
+
+ex:Vietnam a ex:country ;
+    ex:has_capital ex:Hanoi ;
+    ex:iso2_code "VN" ;
+    ex:iso3_code "VNM" .
+
+ex:Weifang a ex:city ;
+    ex:admin_name "Shandong" ;
+    ex:city_ascii "Weifang" ;
+    ex:lattitude 3.67167e+01 ;
+    ex:longitude 1.191e+02 ;
+    ex:name "Weifang" ;
+    ex:population 9373000 .
+
+ex:Wuhan a ex:city ;
+    ex:admin_name "Hubei" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Wuhan" ;
+    ex:lattitude 3.05872e+01 ;
+    ex:longitude 1.142881e+02 ;
+    ex:name "Wuhan" ;
+    ex:population 8962000 .
+
+ex:Xinyang a ex:city ;
+    ex:admin_name "Henan" ;
+    ex:city_ascii "Xinyang" ;
+    ex:lattitude 3.21264e+01 ;
+    ex:longitude 1.140672e+02 ;
+    ex:name "Xinyang" ;
+    ex:population 6634000 .
+
+<http://example.org/Xi’an> a ex:city ;
+    ex:admin_name "Shaanxi" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Xi'an" ;
+    ex:lattitude 3.42667e+01 ;
+    ex:longitude 1.089e+02 ;
+    ex:name "Xi’an" ;
+    ex:population 7135000 .
+
+ex:Yancheng a ex:city ;
+    ex:admin_name "Jiangsu" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Yancheng" ;
+    ex:lattitude 3.33936e+01 ;
+    ex:longitude 1.201339e+02 ;
+    ex:name "Yancheng" ;
+    ex:population 7260240 .
+
+ex:Yantai a ex:city ;
+    ex:admin_name "Shandong" ;
+    ex:city_ascii "Yantai" ;
+    ex:lattitude 3.73997e+01 ;
+    ex:longitude 1.212664e+02 ;
+    ex:name "Yantai" ;
+    ex:population 6516900 .
+
+ex:Yichun a ex:city ;
+    ex:admin_name "Jiangxi" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Yichun" ;
+    ex:lattitude 2.78041e+01 ;
+    ex:longitude 1.14383e+02 ;
+    ex:name "Yichun" ;
+    ex:population 6048700 .
+
+ex:Zhanjiang a ex:city ;
+    ex:admin_name "Guangdong" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Zhanjiang" ;
+    ex:lattitude 2.11967e+01 ;
+    ex:longitude 1.104031e+02 ;
+    ex:name "Zhanjiang" ;
+    ex:population 6900000 .
+
+ex:Zhengzhou a ex:city ;
+    ex:admin_name "Henan" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Zhengzhou" ;
+    ex:lattitude 3.47492e+01 ;
+    ex:longitude 1.136605e+02 ;
+    ex:name "Zhengzhou" ;
+    ex:population 7005000 .
+
+ex:Zhoukou a ex:city ;
+    ex:admin_name "Henan" ;
+    ex:capital_status "minor" ;
+    ex:city_ascii "Zhoukou" ;
+    ex:lattitude 3.3625e+01 ;
+    ex:longitude 1.146418e+02 ;
+    ex:name "Zhoukou" ;
+    ex:population 9901000 .
+
+ex:Zhumadian a ex:city ;
+    ex:admin_name "Henan" ;
+    ex:city_ascii "Zhumadian" ;
+    ex:lattitude 3.29773e+01 ;
+    ex:longitude 1.140253e+02 ;
+    ex:name "Zhumadian" ;
+    ex:population 7640000 .
+
+ex:Zunyi a ex:city ;
+    ex:admin_name "Guizhou" ;
+    ex:city_ascii "Zunyi" ;
+    ex:lattitude 2.7705e+01 ;
+    ex:longitude 1.069336e+02 ;
+    ex:name "Zunyi" ;
+    ex:population 6127009 .
+
+ex:Ōsaka a ex:city ;
+    ex:admin_name "Ōsaka" ;
+    ex:capital_status "admin" ;
+    ex:city_ascii "Osaka" ;
+    ex:lattitude 3.46936e+01 ;
+    ex:longitude 1.355019e+02 ;
+    ex:name "Ōsaka" ;
+    ex:population 14977000 .
+
+ex:Bangkok a ex:city ;
+    ex:admin_name "Krung Thep Maha Nakhon" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Bangkok" ;
+    ex:lattitude 1.375e+01 ;
+    ex:longitude 1.005167e+02 ;
+    ex:name "Bangkok" ;
+    ex:population 17066000 .
+
+ex:Beijing a ex:city ;
+    ex:admin_name "Beijing" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Beijing" ;
+    ex:lattitude 3.9905e+01 ;
+    ex:longitude 1.163914e+02 ;
+    ex:name "Beijing" ;
+    ex:population 19433000 .
+
+ex:Bogotá a ex:city ;
+    ex:admin_name "Bogotá" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Bogota" ;
+    ex:lattitude 4.6126e+00 ;
+    ex:longitude -7.40705e+01 ;
+    ex:name "Bogotá" ;
+    ex:population 9464000 .
+
+ex:Buenos_Aires a ex:city ;
+    ex:admin_name "Buenos Aires, Ciudad Autónoma de" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Buenos Aires" ;
+    ex:lattitude -3.45997e+01 ;
+    ex:longitude -5.83819e+01 ;
+    ex:name "Buenos Aires" ;
+    ex:population 16157000 .
+
+ex:Cairo a ex:city ;
+    ex:admin_name "Al Qāhirah" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Cairo" ;
+    ex:lattitude 3.00561e+01 ;
+    ex:longitude 3.12394e+01 ;
+    ex:name "Cairo" ;
+    ex:population 19372000 .
+
+ex:Dar_es_Salaam a ex:city ;
+    ex:admin_name "Dar es Salaam" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Dar es Salaam" ;
+    ex:lattitude -6.8e+00 ;
+    ex:longitude 3.92833e+01 ;
+    ex:name "Dar es Salaam" ;
+    ex:population 6698000 .
+
+ex:Dhaka a ex:city ;
+    ex:admin_name "Dhaka" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Dhaka" ;
+    ex:lattitude 2.37161e+01 ;
+    ex:longitude 9.03961e+01 ;
+    ex:name "Dhaka" ;
+    ex:population 15443000 .
+
+ex:Hanoi a ex:city ;
+    ex:admin_name "Hà Nội" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Hanoi" ;
+    ex:lattitude 2.10245e+01 ;
+    ex:longitude 1.058412e+02 ;
+    ex:name "Hanoi" ;
+    ex:population 7785000 .
+
+ex:Jakarta a ex:city ;
+    ex:admin_name "Jakarta" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Jakarta" ;
+    ex:lattitude -6.2146e+00 ;
+    ex:longitude 1.068451e+02 ;
+    ex:name "Jakarta" ;
+    ex:population 34540000 .
+
+ex:Khartoum a ex:city ;
+    ex:admin_name "Khartoum" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Khartoum" ;
+    ex:lattitude 1.56031e+01 ;
+    ex:longitude 3.25265e+01 ;
+    ex:name "Khartoum" ;
+    ex:population 7282000 .
+
+ex:Kinshasa a ex:city ;
+    ex:admin_name "Kinshasa" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Kinshasa" ;
+    ex:lattitude -4.3317e+00 ;
+    ex:longitude 1.53139e+01 ;
+    ex:name "Kinshasa" ;
+    ex:population 13528000 .
+
+ex:Kuala_Lumpur a ex:city ;
+    ex:admin_name "Kuala Lumpur" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Kuala Lumpur" ;
+    ex:lattitude 3.1478e+00 ;
+    ex:longitude 1.016953e+02 ;
+    ex:name "Kuala Lumpur" ;
+    ex:population 8285000 .
+
+ex:Lima a ex:city ;
+    ex:admin_name "Lima" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Lima" ;
+    ex:lattitude -1.205e+01 ;
+    ex:longitude -7.70333e+01 ;
+    ex:name "Lima" ;
+    ex:population 9848000 .
+
+ex:London a ex:city ;
+    ex:admin_name "London, City of" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "London" ;
+    ex:lattitude 5.15072e+01 ;
+    ex:longitude -1.275e-01 ;
+    ex:name "London" ;
+    ex:population 10979000 .
+
+ex:Luanda a ex:city ;
+    ex:admin_name "Luanda" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Luanda" ;
+    ex:lattitude -8.8383e+00 ;
+    ex:longitude 1.32344e+01 ;
+    ex:name "Luanda" ;
+    ex:population 8417000 .
+
+ex:Manila a ex:city ;
+    ex:admin_name "Manila" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Manila" ;
+    ex:lattitude 1.45958e+01 ;
+    ex:longitude 1.209772e+02 ;
+    ex:name "Manila" ;
+    ex:population 23088000 .
+
+ex:Mexico_City a ex:city ;
+    ex:admin_name "Ciudad de México" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Mexico City" ;
+    ex:lattitude 1.94333e+01 ;
+    ex:longitude -9.91333e+01 ;
+    ex:name "Mexico City" ;
+    ex:population 20996000 .
+
+ex:Moscow a ex:city ;
+    ex:admin_name "Moskva" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Moscow" ;
+    ex:lattitude 5.57558e+01 ;
+    ex:longitude 3.76178e+01 ;
+    ex:name "Moscow" ;
+    ex:population 17125000 .
+
+ex:Paris a ex:city ;
+    ex:admin_name "Île-de-France" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Paris" ;
+    ex:lattitude 4.88566e+01 ;
+    ex:longitude 2.3522e+00 ;
+    ex:name "Paris" ;
+    ex:population 11020000 .
+
+ex:Riyadh a ex:city ;
+    ex:admin_name "Ar Riyāḑ" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Riyadh" ;
+    ex:lattitude 2.465e+01 ;
+    ex:longitude 4.671e+01 ;
+    ex:name "Riyadh" ;
+    ex:population 6881000 .
+
+ex:Santiago a ex:city ;
+    ex:admin_name "Región Metropolitana" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Santiago" ;
+    ex:lattitude -3.345e+01 ;
+    ex:longitude -7.06667e+01 ;
+    ex:name "Santiago" ;
+    ex:population 7007000 .
+
+ex:Seoul a ex:city ;
+    ex:admin_name "Seoul" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Seoul" ;
+    ex:lattitude 3.75833e+01 ;
+    ex:longitude 1.27e+02 ;
+    ex:name "Seoul" ;
+    ex:population 21794000 .
+
+ex:Tehran a ex:city ;
+    ex:admin_name "Tehrān" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Tehran" ;
+    ex:lattitude 3.57e+01 ;
+    ex:longitude 5.14167e+01 ;
+    ex:name "Tehran" ;
+    ex:population 13633000 .
+
+ex:Tokyo a ex:city ;
+    ex:admin_name "Tōkyō" ;
+    ex:capital_status "primary" ;
+    ex:city_ascii "Tokyo" ;
+    ex:lattitude 3.56897e+01 ;
+    ex:longitude 1.396922e+02 ;
+    ex:name "Tokyo" ;
+    ex:population 37977000 .
+

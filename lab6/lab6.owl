@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6">
+    <Prefix name="" IRI="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6"/>
+    <Prefix name="ex" IRI="http://example.org/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ex:capital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ex:city"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ex:country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ex:not_capital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_capital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ex:has_city"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ex:has_country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city_ascii"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is02_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is_capital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#iso3_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lattitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#population"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ex:capital"/>
+        <Class IRI="#ex:city"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ex:not_capital"/>
+        <Class IRI="#ex:city"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ex:capital"/>
+        <Class IRI="#ex:not_capital"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ex:city"/>
+        <Class IRI="#ex:country"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_capital"/>
+        <ObjectProperty IRI="#ex:has_city"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ex:has_city"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ex:has_country"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ex:has_city"/>
+        <ObjectProperty IRI="#ex:has_country"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_capital"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ex:has_country"/>
+    </FunctionalObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#ex:has_city"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_capital"/>
+        <Class IRI="#ex:country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ex:has_city"/>
+        <Class IRI="#ex:country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ex:has_country"/>
+        <Class IRI="#ex:city"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_capital"/>
+        <Class IRI="#ex:capital"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ex:has_city"/>
+        <Class IRI="#ex:city"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ex:has_country"/>
+        <Class IRI="#ex:country"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#city_ascii"/>
+        <Class IRI="#ex:city"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#is02_code"/>
+        <Class IRI="#ex:country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iso3_code"/>
+        <Class IRI="#ex:country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lattitude"/>
+        <Class IRI="#ex:city"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitude"/>
+        <Class IRI="#ex:city"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#population"/>
+        <Class IRI="#ex:city"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#city_ascii"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#is02_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#is_capital"/>
+        <Datatype abbreviatedIRI="xsd:byte"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#iso3_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lattitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#population"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
