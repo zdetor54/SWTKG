@@ -7,6 +7,81 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isToppingOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isToppingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isToppingOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
