@@ -1,0 +1,126 @@
+@prefix : <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#> .
+@prefix ex: <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab> .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#hasCapital
+ex:hasCapital rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf ex:isCountryOf .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#hasCountry
+ex:hasCountry rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf ex:isCountryOf ;
+              rdfs:domain ex:City ;
+              rdfs:range ex:Country .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#isCountryOf
+ex:isCountryOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#adminName
+ex:adminName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain ex:City ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#capitalStatus
+ex:capitalStatus rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain ex:City ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#cityAscii
+ex:cityAscii rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain ex:City ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#iso2Code
+ex:iso2Code rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain ex:Country ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#iso3code
+ex:iso3code rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain ex:Country ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#lattitude
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#lattitude> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain ex:City ;
+                                                                                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#longitude
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#longitude> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain ex:City ;
+                                                                                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#name
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#name> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                             rdfs:domain ex:City ,
+                                                                                         ex:Country ;
+                                                                             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#population
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#population> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain ex:City ;
+                                                                                   rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Capital
+ex:Capital rdf:type owl:Class ;
+           rdfs:subClassOf ex:City ;
+           owl:disjointWith ex:NonCapital .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#City
+ex:City rdf:type owl:Class ;
+        owl:disjointWith ex:Country .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Country
+ex:Country rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#NonCapital
+ex:NonCapital rdf:type owl:Class ;
+              rdfs:subClassOf ex:City .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

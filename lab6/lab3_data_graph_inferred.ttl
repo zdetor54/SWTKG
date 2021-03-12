@@ -1,0 +1,5968 @@
+@prefix err: <http://www.daml.org/2002/03/agents/agent-ont#> .
+@prefix ex: <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Capital a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ex:Capital,
+        ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:disjointWith ex:NonCapital ;
+    owl:equivalentClass ex:Capital ;
+    owl:sameAs ex:Capital .
+
+ex:City a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:disjointWith ex:Country ;
+    owl:equivalentClass ex:City ;
+    owl:sameAs ex:City .
+
+ex:Country a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ex:Country ;
+    owl:sameAs ex:Country .
+
+ex:NonCapital a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ex:City,
+        ex:NonCapital,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ex:NonCapital ;
+    owl:sameAs ex:NonCapital .
+
+rdf:Property a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass rdf:Property,
+        owl:ObjectProperty ;
+    owl:sameAs rdf:Property .
+
+rdfs:Class a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    owl:equivalentClass rdfs:Class,
+        owl:Class ;
+    owl:sameAs rdfs:Class .
+
+rdfs:Datatype a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass rdfs:Datatype ;
+    owl:sameAs rdfs:Datatype .
+
+xsd:decimal a rdfs:Class,
+        rdfs:Datatype,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        xsd:decimal,
+        owl:Thing ;
+    owl:disjointWith xsd:double ;
+    owl:equivalentClass xsd:decimal ;
+    owl:sameAs xsd:decimal .
+
+xsd:double a rdfs:Class,
+        rdfs:Datatype,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:equivalentClass xsd:double ;
+    owl:sameAs xsd:double .
+
+owl:AllDifferent a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:AllDifferent,
+        owl:Thing ;
+    owl:equivalentClass owl:AllDifferent ;
+    owl:sameAs owl:AllDifferent .
+
+owl:AllDisjointClasses a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:AllDisjointClasses,
+        owl:Thing ;
+    owl:equivalentClass owl:AllDisjointClasses ;
+    owl:sameAs owl:AllDisjointClasses .
+
+owl:AllDisjointProperties a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:AllDisjointProperties,
+        owl:Thing ;
+    owl:equivalentClass owl:AllDisjointProperties ;
+    owl:sameAs owl:AllDisjointProperties .
+
+owl:Annotation a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Annotation,
+        owl:Thing ;
+    owl:equivalentClass owl:Annotation ;
+    owl:sameAs owl:Annotation .
+
+owl:AnnotationProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:AnnotationProperty ;
+    owl:sameAs owl:AnnotationProperty .
+
+owl:AsymmetricProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:AsymmetricProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:AsymmetricProperty ;
+    owl:sameAs owl:AsymmetricProperty .
+
+owl:Axiom a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Axiom,
+        owl:Thing ;
+    owl:equivalentClass owl:Axiom ;
+    owl:sameAs owl:Axiom .
+
+owl:Class a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    owl:equivalentClass rdfs:Class,
+        owl:Class ;
+    owl:sameAs owl:Class .
+
+owl:DataRange a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    owl:equivalentClass owl:DataRange ;
+    owl:sameAs owl:DataRange .
+
+owl:DatatypeProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:DatatypeProperty ;
+    owl:sameAs owl:DatatypeProperty .
+
+owl:DeprecatedClass a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:DeprecatedClass,
+        owl:Thing ;
+    owl:equivalentClass owl:DeprecatedClass ;
+    owl:sameAs owl:DeprecatedClass .
+
+owl:DeprecatedProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:DeprecatedProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:DeprecatedProperty ;
+    owl:sameAs owl:DeprecatedProperty .
+
+owl:FunctionalProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:FunctionalProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:FunctionalProperty ;
+    owl:sameAs owl:FunctionalProperty .
+
+owl:InverseFunctionalProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:InverseFunctionalProperty ;
+    owl:sameAs owl:InverseFunctionalProperty .
+
+owl:IrreflexiveProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:IrreflexiveProperty ;
+    owl:sameAs owl:IrreflexiveProperty .
+
+owl:NamedIndividual a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:equivalentClass owl:NamedIndividual ;
+    owl:sameAs owl:NamedIndividual .
+
+owl:NegativePropertyAssertion a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:NegativePropertyAssertion,
+        owl:Thing ;
+    owl:equivalentClass owl:NegativePropertyAssertion ;
+    owl:sameAs owl:NegativePropertyAssertion .
+
+owl:Nothing a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ex:Capital,
+        ex:City,
+        ex:Country,
+        ex:NonCapital,
+        rdf:Property,
+        rdfs:Class,
+        rdfs:Datatype,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:double,
+        owl:AllDifferent,
+        owl:AllDisjointClasses,
+        owl:AllDisjointProperties,
+        owl:Annotation,
+        owl:AnnotationProperty,
+        owl:AsymmetricProperty,
+        owl:Axiom,
+        owl:Class,
+        owl:DataRange,
+        owl:DatatypeProperty,
+        owl:DeprecatedClass,
+        owl:DeprecatedProperty,
+        owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:IrreflexiveProperty,
+        owl:NamedIndividual,
+        owl:NegativePropertyAssertion,
+        owl:Nothing,
+        owl:ObjectProperty,
+        owl:Ontology,
+        owl:OntologyProperty,
+        owl:ReflexiveProperty,
+        owl:Restriction,
+        owl:SymmetricProperty,
+        owl:Thing,
+        owl:TransitiveProperty ;
+    owl:equivalentClass owl:Nothing ;
+    owl:sameAs owl:Nothing .
+
+owl:ObjectProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    owl:equivalentClass rdf:Property,
+        owl:ObjectProperty ;
+    owl:sameAs owl:ObjectProperty .
+
+owl:Ontology a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    owl:equivalentClass owl:Ontology ;
+    owl:sameAs owl:Ontology .
+
+owl:OntologyProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:OntologyProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:OntologyProperty ;
+    owl:sameAs owl:OntologyProperty .
+
+owl:ReflexiveProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:ReflexiveProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:ReflexiveProperty ;
+    owl:sameAs owl:ReflexiveProperty .
+
+owl:Restriction a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    owl:equivalentClass owl:Restriction ;
+    owl:sameAs owl:Restriction .
+
+owl:SymmetricProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:Thing ;
+    owl:equivalentClass owl:SymmetricProperty ;
+    owl:sameAs owl:SymmetricProperty .
+
+owl:Thing a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass owl:Thing ;
+    owl:sameAs owl:Thing .
+
+owl:TransitiveProperty a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing,
+        owl:TransitiveProperty ;
+    owl:equivalentClass owl:TransitiveProperty ;
+    owl:sameAs owl:TransitiveProperty .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab> a rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab> .
+
+ex:iso3_code a rdfs:Resource ;
+    owl:sameAs ex:iso3_code .
+
+ex:lattitude a rdfs:Resource ;
+    owl:sameAs ex:lattitude .
+
+ex:longitude a rdfs:Resource ;
+    owl:sameAs ex:longitude .
+
+ex:name a rdfs:Resource ;
+    owl:sameAs ex:name .
+
+ex:population a rdfs:Resource ;
+    owl:sameAs ex:population .
+
+rdf:HTML a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs rdf:HTML .
+
+rdf:LangString a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs rdf:LangString .
+
+rdf:PlainLiteral a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs rdf:PlainLiteral .
+
+rdf:XMLLiteral a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs rdf:XMLLiteral .
+
+rdf:type a rdfs:Resource ;
+    owl:sameAs rdf:type .
+
+rdfs:domain a rdfs:Resource ;
+    owl:sameAs rdfs:domain .
+
+rdfs:range a rdfs:Resource ;
+    owl:sameAs rdfs:range .
+
+rdfs:subClassOf a rdfs:Resource ;
+    owl:sameAs rdfs:subClassOf .
+
+rdfs:subPropertyOf a rdfs:Resource ;
+    owl:sameAs rdfs:subPropertyOf .
+
+xsd:NCName a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:NCName .
+
+xsd:NMTOKEN a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:NMTOKEN .
+
+xsd:Name a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:Name .
+
+xsd:anyURI a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:anyURI .
+
+xsd:base64Binary a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:base64Binary .
+
+xsd:boolean a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:boolean .
+
+xsd:byte a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:byte .
+
+xsd:date a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:date .
+
+xsd:dateTime a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:dateTime .
+
+xsd:dateTimeStamp a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:dateTimeStamp .
+
+xsd:float a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:float .
+
+xsd:hexBinary a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:hexBinary .
+
+xsd:language a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:language .
+
+xsd:long a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:long .
+
+xsd:negativeInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:negativeInteger .
+
+xsd:nonPositiveInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:nonPositiveInteger .
+
+xsd:normalizedString a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:normalizedString .
+
+xsd:positiveInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:positiveInteger .
+
+xsd:short a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:short .
+
+xsd:time a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:time .
+
+xsd:token a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:token .
+
+xsd:unsignedByte a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:unsignedByte .
+
+xsd:unsignedInt a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:unsignedInt .
+
+xsd:unsignedLong a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:unsignedLong .
+
+xsd:unsignedShort a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:unsignedShort .
+
+owl:disjointUnionOf a rdfs:Resource ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    owl:sameAs owl:disjointUnionOf .
+
+xsd:int a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:int .
+
+-1.184068e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -1.184068e+02 .
+
+-9.91333e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -9.91333e+01 .
+
+-8.76862e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -8.76862e+01 .
+
+-8.02102e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -8.02102e+01 .
+
+-7.70333e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -7.70333e+01 .
+
+-7.40705e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -7.40705e+01 .
+
+-7.39249e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -7.39249e+01 .
+
+-7.06667e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -7.06667e+01 .
+
+-5.83819e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -5.83819e+01 .
+
+-4.66339e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -4.66339e+01 .
+
+-4.31964e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -4.31964e+01 .
+
+-3.45997e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -3.45997e+01 .
+
+-3.345e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -3.345e+01 .
+
+-2.35504e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -2.35504e+01 .
+
+-2.29083e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -2.29083e+01 .
+
+-1.205e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -1.205e+01 .
+
+-8.8383e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -8.8383e+00 .
+
+-6.8e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -6.8e+00 .
+
+-6.2146e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -6.2146e+00 .
+
+-4.3317e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -4.3317e+00 .
+
+-1.275e-01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs -1.275e-01 .
+
+2.3522e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.3522e+00 .
+
+3.1478e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.1478e+00 .
+
+3.4e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.4e+00 .
+
+4.6126e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.6126e+00 .
+
+6.1667e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 6.1667e+00 .
+
+6.45e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 6.45e+00 .
+
+6.7833e+00 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 6.7833e+00 .
+
+1.08167e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.08167e+01 .
+
+1.29699e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.29699e+01 .
+
+1.30825e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.30825e+01 .
+
+1.32344e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.32344e+01 .
+
+1.375e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.375e+01 .
+
+1.45958e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.45958e+01 .
+
+1.53139e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.53139e+01 .
+
+1.56031e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.56031e+01 .
+
+1.73667e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.73667e+01 .
+
+1.85196e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.85196e+01 .
+
+1.89667e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.89667e+01 .
+
+1.94333e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.94333e+01 .
+
+2.10245e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.10245e+01 .
+
+2.11967e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.11967e+01 .
+
+2.16618e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.16618e+01 .
+
+2.2305e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.2305e+01 .
+
+2.2535e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.2535e+01 .
+
+2.25411e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.25411e+01 .
+
+2.28192e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.28192e+01 .
+
+2.30292e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.30292e+01 .
+
+2.303e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.303e+01 .
+
+2.30475e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.30475e+01 .
+
+2.31288e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.31288e+01 .
+
+2.37161e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.37161e+01 .
+
+2.465e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.465e+01 .
+
+2.486e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.486e+01 .
+
+2.49139e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.49139e+01 .
+
+2.50433e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.50433e+01 .
+
+2.57839e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.57839e+01 .
+
+2.58292e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.58292e+01 .
+
+2.68968e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.68968e+01 .
+
+2.72418e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.72418e+01 .
+
+2.73019e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.73019e+01 .
+
+2.7705e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.7705e+01 .
+
+2.78041e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.78041e+01 .
+
+2.81987e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.81987e+01 .
+
+2.84419e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.84419e+01 .
+
+2.866e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.866e+01 .
+
+2.89603e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.89603e+01 .
+
+2.955e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.955e+01 .
+
+2.9875e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 2.9875e+01 .
+
+3.00561e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.00561e+01 .
+
+3.025e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.025e+01 .
+
+3.045e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.045e+01 .
+
+3.05872e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.05872e+01 .
+
+3.06636e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.06636e+01 .
+
+3.07991e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.07991e+01 .
+
+3.11667e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.11667e+01 .
+
+3.12394e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.12394e+01 .
+
+3.15497e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.15497e+01 .
+
+3.17542e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.17542e+01 .
+
+3.18639e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.18639e+01 .
+
+3.19829e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.19829e+01 .
+
+3.205e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.205e+01 .
+
+3.21264e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.21264e+01 .
+
+3.25265e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.25265e+01 .
+
+3.28986e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.28986e+01 .
+
+3.29773e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.29773e+01 .
+
+3.29987e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.29987e+01 .
+
+3.33936e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.33936e+01 .
+
+3.3625e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.3625e+01 .
+
+3.41139e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.41139e+01 .
+
+3.4261e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.4261e+01 .
+
+3.42667e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.42667e+01 .
+
+3.46587e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.46587e+01 .
+
+3.46936e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.46936e+01 .
+
+3.47492e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.47492e+01 .
+
+3.50606e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.50606e+01 .
+
+3.51167e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.51167e+01 .
+
+3.52333e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.52333e+01 .
+
+3.54e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.54e+01 .
+
+3.56897e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.56897e+01 .
+
+3.57e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.57e+01 .
+
+3.66116e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.66116e+01 .
+
+3.67167e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.67167e+01 .
+
+3.73997e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.73997e+01 .
+
+3.75833e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.75833e+01 .
+
+3.76178e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.76178e+01 .
+
+3.80422e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.80422e+01 .
+
+3.83037e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.83037e+01 .
+
+3.88671e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.88671e+01 .
+
+3.91467e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.91467e+01 .
+
+3.92833e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.92833e+01 .
+
+3.96292e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.96292e+01 .
+
+3.9905e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 3.9905e+01 .
+
+4.06943e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.06943e+01 .
+
+4.101e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.101e+01 .
+
+4.18039e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.18039e+01 .
+
+4.18373e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.18373e+01 .
+
+4.39e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.39e+01 .
+
+4.671e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.671e+01 .
+
+4.88566e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 4.88566e+01 .
+
+5.14167e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 5.14167e+01 .
+
+5.15072e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 5.15072e+01 .
+
+5.57558e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 5.57558e+01 .
+
+6.701e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 6.701e+01 .
+
+7.258e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 7.258e+01 .
+
+7.28333e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 7.28333e+01 .
+
+7.38553e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 7.38553e+01 .
+
+7.43436e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 7.43436e+01 .
+
+7.723e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 7.723e+01 .
+
+7.7598e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 7.7598e+01 .
+
+7.84667e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 7.84667e+01 .
+
+8.0275e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 8.0275e+01 .
+
+8.83378e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 8.83378e+01 .
+
+9.03961e+01 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 9.03961e+01 .
+
+1.005167e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.005167e+02 .
+
+1.016953e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.016953e+02 .
+
+1.027061e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.027061e+02 .
+
+1.040667e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.040667e+02 .
+
+1.052863e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.052863e+02 .
+
+1.058412e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.058412e+02 .
+
+1.060784e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.060784e+02 .
+
+1.065069e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.065069e+02 .
+
+1.066333e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.066333e+02 .
+
+1.068451e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.068451e+02 .
+
+1.069336e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.069336e+02 .
+
+1.08315e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.08315e+02 .
+
+1.089e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.089e+02 .
+
+1.104031e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.104031e+02 .
+
+1.109178e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.109178e+02 .
+
+1.114725e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.114725e+02 .
+
+1.124245e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.124245e+02 .
+
+1.125292e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.125292e+02 .
+
+1.125857e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.125857e+02 .
+
+1.129709e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.129709e+02 .
+
+1.131056e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.131056e+02 .
+
+1.13259e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.13259e+02 .
+
+1.136605e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.136605e+02 .
+
+1.137493e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.137493e+02 .
+
+1.140253e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.140253e+02 .
+
+1.14054e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.14054e+02 .
+
+1.140672e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.140672e+02 .
+
+1.14185e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.14185e+02 .
+
+1.142881e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.142881e+02 .
+
+1.14383e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.14383e+02 .
+
+1.144894e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.144894e+02 .
+
+1.145086e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.145086e+02 .
+
+1.146418e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.146418e+02 .
+
+1.14875e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.14875e+02 .
+
+1.149336e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.149336e+02 .
+
+1.154333e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.154333e+02 .
+
+1.154845e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.154845e+02 .
+
+1.158045e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.158045e+02 .
+
+1.163914e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.163914e+02 .
+
+1.165078e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.165078e+02 .
+
+1.165667e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.165667e+02 .
+
+1.168452e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.168452e+02 .
+
+1.171859e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.171859e+02 .
+
+1.172056e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.172056e+02 .
+
+1.172808e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.172808e+02 .
+
+1.179633e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.179633e+02 .
+
+1.181742e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.181742e+02 .
+
+1.183425e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.183425e+02 .
+
+1.185858e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.185858e+02 .
+
+1.187667e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.187667e+02 .
+
+1.191e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.191e+02 .
+
+1.201339e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.201339e+02 .
+
+1.201675e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.201675e+02 .
+
+1.208873e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.208873e+02 .
+
+1.209772e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.209772e+02 .
+
+1.212664e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.212664e+02 .
+
+1.214667e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.214667e+02 .
+
+1.215492e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.215492e+02 .
+
+1.234258e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.234258e+02 .
+
+1.252e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.252e+02 .
+
+1.27e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.27e+02 .
+
+1.355019e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.355019e+02 .
+
+1.369333e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.369333e+02 .
+
+1.396922e+02 a rdfs:Resource,
+        xsd:double,
+        owl:Thing ;
+    owl:sameAs 1.396922e+02 .
+
+6048700 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6048700 .
+
+6090000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6090000 .
+
+6127009 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6127009 .
+
+6183000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6183000 .
+
+6250000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6250000 .
+
+6445545 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6445545 .
+
+6446000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6446000 .
+
+6480000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6480000 .
+
+6516900 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6516900 .
+
+6537498 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6537498 .
+
+6549941 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6549941 .
+
+6579714 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6579714 .
+
+6634000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6634000 .
+
+6667000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6667000 .
+
+6698000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6698000 .
+
+6706000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6706000 .
+
+6800000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6800000 .
+
+6881000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6881000 .
+
+6900000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 6900000 .
+
+7005000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7005000 .
+
+7007000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7007000 .
+
+7044118 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7044118 .
+
+7071000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7071000 .
+
+7100000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7100000 .
+
+7105000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7105000 .
+
+7135000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7135000 .
+
+7148344 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7148344 .
+
+7153300 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7153300 .
+
+7194311 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7194311 .
+
+7260240 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7260240 .
+
+7282000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7282000 .
+
+7282835 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7282835 .
+
+7347000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7347000 .
+
+7410000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7410000 .
+
+7457027 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7457027 .
+
+7496000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7496000 .
+
+7635000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7635000 .
+
+7639000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7639000 .
+
+7640000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7640000 .
+
+7674439 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7674439 .
+
+7739000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7739000 .
+
+7764000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7764000 .
+
+7785000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7785000 .
+
+7981000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 7981000 .
+
+8023000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8023000 .
+
+8285000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8285000 .
+
+8360000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8360000 .
+
+8417000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8417000 .
+
+8499000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8499000 .
+
+8604203 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8604203 .
+
+8669000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8669000 .
+
+8677600 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8677600 .
+
+8750000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8750000 .
+
+8962000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 8962000 .
+
+9113000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 9113000 .
+
+9373000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 9373000 .
+
+9464000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 9464000 .
+
+9746000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 9746000 .
+
+9848000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 9848000 .
+
+9901000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 9901000 .
+
+10700000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 10700000 .
+
+10784600 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 10784600 .
+
+10800000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 10800000 .
+
+10820000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 10820000 .
+
+10979000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 10979000 .
+
+11020000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 11020000 .
+
+11021000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 11021000 .
+
+11309000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 11309000 .
+
+11324000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 11324000 .
+
+12010000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 12010000 .
+
+12272000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 12272000 .
+
+12750807 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 12750807 .
+
+13312000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 13312000 .
+
+13528000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 13528000 .
+
+13633000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 13633000 .
+
+13707000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 13707000 .
+
+14835000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 14835000 .
+
+14977000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 14977000 .
+
+15154000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 15154000 .
+
+15279000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 15279000 .
+
+15443000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 15443000 .
+
+15929000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 15929000 .
+
+16157000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 16157000 .
+
+17066000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 17066000 .
+
+17125000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 17125000 .
+
+17560000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 17560000 .
+
+18713220 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 18713220 .
+
+19372000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 19372000 .
+
+19433000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 19433000 .
+
+20902000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 20902000 .
+
+20996000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 20996000 .
+
+21794000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 21794000 .
+
+22046000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 22046000 .
+
+22120000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 22120000 .
+
+23088000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 23088000 .
+
+23355000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 23355000 .
+
+29617000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 29617000 .
+
+34540000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 34540000 .
+
+37977000 a rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 37977000 .
+
+"AGO" a rdfs:Resource ;
+    owl:sameAs "AGO" .
+
+"ARG" a rdfs:Resource ;
+    owl:sameAs "ARG" .
+
+"Ahmadābād" a rdfs:Resource ;
+    owl:sameAs "Ahmadābād" .
+
+"Angola" a rdfs:Resource ;
+    owl:sameAs "Angola" .
+
+"Argentina" a rdfs:Resource ;
+    owl:sameAs "Argentina" .
+
+"BGD" a rdfs:Resource ;
+    owl:sameAs "BGD" .
+
+"BRA" a rdfs:Resource ;
+    owl:sameAs "BRA" .
+
+"Bangladesh" a rdfs:Resource ;
+    owl:sameAs "Bangladesh" .
+
+"Brazil" a rdfs:Resource ;
+    owl:sameAs "Brazil" .
+
+"CHL" a rdfs:Resource ;
+    owl:sameAs "CHL" .
+
+"CHN" a rdfs:Resource ;
+    owl:sameAs "CHN" .
+
+"COD" a rdfs:Resource ;
+    owl:sameAs "COD" .
+
+"COL" a rdfs:Resource ;
+    owl:sameAs "COL" .
+
+"Chile" a rdfs:Resource ;
+    owl:sameAs "Chile" .
+
+"China" a rdfs:Resource ;
+    owl:sameAs "China" .
+
+"Colombia" a rdfs:Resource ;
+    owl:sameAs "Colombia" .
+
+"Congo (Kinshasa)" a rdfs:Resource ;
+    owl:sameAs "Congo (Kinshasa)" .
+
+"EGY" a rdfs:Resource ;
+    owl:sameAs "EGY" .
+
+"Egypt" a rdfs:Resource ;
+    owl:sameAs "Egypt" .
+
+"FRA" a rdfs:Resource ;
+    owl:sameAs "FRA" .
+
+"France" a rdfs:Resource ;
+    owl:sameAs "France" .
+
+"GBR" a rdfs:Resource ;
+    owl:sameAs "GBR" .
+
+"HKG" a rdfs:Resource ;
+    owl:sameAs "HKG" .
+
+"Hyderābād" a rdfs:Resource ;
+    owl:sameAs "Hyderābād" .
+
+"IDN" a rdfs:Resource ;
+    owl:sameAs "IDN" .
+
+"IND" a rdfs:Resource ;
+    owl:sameAs "IND" .
+
+"IRN" a rdfs:Resource ;
+    owl:sameAs "IRN" .
+
+"India" a rdfs:Resource ;
+    owl:sameAs "India" .
+
+"Indonesia" a rdfs:Resource ;
+    owl:sameAs "Indonesia" .
+
+"Iran" a rdfs:Resource ;
+    owl:sameAs "Iran" .
+
+"JPN" a rdfs:Resource ;
+    owl:sameAs "JPN" .
+
+"Japan" a rdfs:Resource ;
+    owl:sameAs "Japan" .
+
+"KOR" a rdfs:Resource ;
+    owl:sameAs "KOR" .
+
+"Kolkāta" a rdfs:Resource ;
+    owl:sameAs "Kolkāta" .
+
+"Korea, South" a rdfs:Resource ;
+    owl:sameAs "Korea, South" .
+
+"Lu’an" a rdfs:Resource ;
+    owl:sameAs "Lu’an" .
+
+"MEX" a rdfs:Resource ;
+    owl:sameAs "MEX" .
+
+"MYS" a rdfs:Resource ;
+    owl:sameAs "MYS" .
+
+"Malaysia" a rdfs:Resource ;
+    owl:sameAs "Malaysia" .
+
+"Mexico" a rdfs:Resource ;
+    owl:sameAs "Mexico" .
+
+"NGA" a rdfs:Resource ;
+    owl:sameAs "NGA" .
+
+"Nigeria" a rdfs:Resource ;
+    owl:sameAs "Nigeria" .
+
+"PAK" a rdfs:Resource ;
+    owl:sameAs "PAK" .
+
+"PER" a rdfs:Resource ;
+    owl:sameAs "PER" .
+
+"PHL" a rdfs:Resource ;
+    owl:sameAs "PHL" .
+
+"Pakistan" a rdfs:Resource ;
+    owl:sameAs "Pakistan" .
+
+"Peru" a rdfs:Resource ;
+    owl:sameAs "Peru" .
+
+"Philippines" a rdfs:Resource ;
+    owl:sameAs "Philippines" .
+
+"RUS" a rdfs:Resource ;
+    owl:sameAs "RUS" .
+
+"Russia" a rdfs:Resource ;
+    owl:sameAs "Russia" .
+
+"SAU" a rdfs:Resource ;
+    owl:sameAs "SAU" .
+
+"SDN" a rdfs:Resource ;
+    owl:sameAs "SDN" .
+
+"Saudi Arabia" a rdfs:Resource ;
+    owl:sameAs "Saudi Arabia" .
+
+"Sudan" a rdfs:Resource ;
+    owl:sameAs "Sudan" .
+
+"THA" a rdfs:Resource ;
+    owl:sameAs "THA" .
+
+"TUR" a rdfs:Resource ;
+    owl:sameAs "TUR" .
+
+"TZA" a rdfs:Resource ;
+    owl:sameAs "TZA" .
+
+"Tanzania" a rdfs:Resource ;
+    owl:sameAs "Tanzania" .
+
+"Thailand" a rdfs:Resource ;
+    owl:sameAs "Thailand" .
+
+"Turkey" a rdfs:Resource ;
+    owl:sameAs "Turkey" .
+
+"USA" a rdfs:Resource ;
+    owl:sameAs "USA" .
+
+"United Kingdom" a rdfs:Resource ;
+    owl:sameAs "United Kingdom" .
+
+"United States" a rdfs:Resource ;
+    owl:sameAs "United States" .
+
+"VNM" a rdfs:Resource ;
+    owl:sameAs "VNM" .
+
+"Vietnam" a rdfs:Resource ;
+    owl:sameAs "Vietnam" .
+
+"Xi’an" a rdfs:Resource ;
+    owl:sameAs "Xi’an" .
+
+ex:Ahmadabad a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Gujarāt" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Ahmadabad" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 2.303e+01 ;
+    ex:longitude 7.258e+01 ;
+    ex:name "Ahmadābād" ;
+    ex:population 7410000 ;
+    owl:sameAs ex:Ahmadabad ;
+    owl:topDataProperty "Ahmadabad",
+        "Gujarāt",
+        "minor" ;
+    owl:topObjectProperty ex:India .
+
+ex:Angola a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Luanda ;
+    ex:isCountryOf ex:Luanda ;
+    ex:iso2Code "AO" ;
+    ex:iso3_code "AGO" ;
+    ex:name "Angola" ;
+    owl:sameAs ex:Angola ;
+    owl:topDataProperty "AO" ;
+    owl:topObjectProperty ex:Luanda .
+
+ex:Argentina a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Buenos_Aires ;
+    ex:isCountryOf ex:Buenos_Aires ;
+    ex:iso2Code "AR" ;
+    ex:iso3_code "ARG" ;
+    ex:name "Argentina" ;
+    owl:sameAs ex:Argentina ;
+    owl:topDataProperty "AR" ;
+    owl:topObjectProperty ex:Buenos_Aires .
+
+ex:Bangalore a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Karnātaka" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Bangalore" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 1.29699e+01 ;
+    ex:longitude 7.7598e+01 ;
+    ex:name "Bangalore" ;
+    ex:population 13707000 ;
+    owl:sameAs ex:Bangalore ;
+    owl:topDataProperty "Bangalore",
+        "Karnātaka",
+        "admin" ;
+    owl:topObjectProperty ex:India .
+
+ex:Bangladesh a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Dhaka ;
+    ex:isCountryOf ex:Dhaka ;
+    ex:iso2Code "BD" ;
+    ex:iso3_code "BGD" ;
+    ex:name "Bangladesh" ;
+    owl:sameAs ex:Bangladesh ;
+    owl:topDataProperty "BD" ;
+    owl:topObjectProperty ex:Dhaka .
+
+ex:Baoding a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hebei" ;
+    ex:cityAscii "Baoding" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.88671e+01 ;
+    ex:longitude 1.154845e+02 ;
+    ex:name "Baoding" ;
+    ex:population 10700000 ;
+    owl:sameAs ex:Baoding ;
+    owl:topDataProperty "Baoding",
+        "Hebei" ;
+    owl:topObjectProperty ex:China .
+
+ex:Bijie a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guizhou" ;
+    ex:cityAscii "Bijie" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.73019e+01 ;
+    ex:longitude 1.052863e+02 ;
+    ex:name "Bijie" ;
+    ex:population 6537498 ;
+    owl:sameAs ex:Bijie ;
+    owl:topDataProperty "Bijie",
+        "Guizhou" ;
+    owl:topObjectProperty ex:China .
+
+ex:Cangzhou a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hebei" ;
+    ex:cityAscii "Cangzhou" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.83037e+01 ;
+    ex:longitude 1.168452e+02 ;
+    ex:name "Cangzhou" ;
+    ex:population 6800000 ;
+    owl:sameAs ex:Cangzhou ;
+    owl:topDataProperty "Cangzhou",
+        "Hebei" ;
+    owl:topObjectProperty ex:China .
+
+ex:Changchun a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jilin" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Changchun" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 4.39e+01 ;
+    ex:longitude 1.252e+02 ;
+    ex:name "Changchun" ;
+    ex:population 7674439 ;
+    owl:sameAs ex:Changchun ;
+    owl:topDataProperty "Changchun",
+        "Jilin",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Changsha a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hunan" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Changsha" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.81987e+01 ;
+    ex:longitude 1.129709e+02 ;
+    ex:name "Changsha" ;
+    ex:population 7044118 ;
+    owl:sameAs ex:Changsha ;
+    owl:topDataProperty "Changsha",
+        "Hunan",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Chengdu a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Sichuan" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Chengdu" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.06636e+01 ;
+    ex:longitude 1.040667e+02 ;
+    ex:name "Chengdu" ;
+    ex:population 11309000 ;
+    owl:sameAs ex:Chengdu ;
+    owl:topDataProperty "Chengdu",
+        "Sichuan",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Chennai a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Tamil Nādu" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Chennai" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 1.30825e+01 ;
+    ex:longitude 8.0275e+01 ;
+    ex:name "Chennai" ;
+    ex:population 11324000 ;
+    owl:sameAs ex:Chennai ;
+    owl:topDataProperty "Chennai",
+        "Tamil Nādu",
+        "admin" ;
+    owl:topObjectProperty ex:India .
+
+ex:Chicago a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Illinois" ;
+    ex:cityAscii "Chicago" ;
+    ex:hasCountry ex:United_States ;
+    ex:lattitude 4.18373e+01 ;
+    ex:longitude -8.76862e+01 ;
+    ex:name "Chicago" ;
+    ex:population 8604203 ;
+    owl:sameAs ex:Chicago ;
+    owl:topDataProperty "Chicago",
+        "Illinois" ;
+    owl:topObjectProperty ex:United_States .
+
+ex:Chile a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Santiago ;
+    ex:isCountryOf ex:Santiago ;
+    ex:iso2Code "CL" ;
+    ex:iso3_code "CHL" ;
+    ex:name "Chile" ;
+    owl:sameAs ex:Chile ;
+    owl:topDataProperty "CL" ;
+    owl:topObjectProperty ex:Santiago .
+
+ex:Chongqing a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Chongqing" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Chongqing" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.955e+01 ;
+    ex:longitude 1.065069e+02 ;
+    ex:name "Chongqing" ;
+    ex:population 7739000 ;
+    owl:sameAs ex:Chongqing ;
+    owl:topDataProperty "Chongqing",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Colombia a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Bogota ;
+    ex:isCountryOf ex:Bogota ;
+    ex:iso2Code "CO" ;
+    ex:iso3_code "COL" ;
+    ex:name "Colombia" ;
+    owl:sameAs ex:Colombia ;
+    owl:topDataProperty "CO" ;
+    owl:topObjectProperty ex:Bogota .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Congo_(Kinshasa)> a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Kinshasa ;
+    ex:isCountryOf ex:Kinshasa ;
+    ex:iso2Code "CD" ;
+    ex:iso3_code "COD" ;
+    ex:name "Congo (Kinshasa)" ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Congo_(Kinshasa)> ;
+    owl:topDataProperty "CD" ;
+    owl:topObjectProperty ex:Kinshasa .
+
+ex:Delhi a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Delhi" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Delhi" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 2.866e+01 ;
+    ex:longitude 7.723e+01 ;
+    ex:name "Delhi" ;
+    ex:population 29617000 ;
+    owl:sameAs ex:Delhi ;
+    owl:topDataProperty "Delhi",
+        "admin" ;
+    owl:topObjectProperty ex:India .
+
+ex:Dongguan a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guangdong" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Dongguan" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.30475e+01 ;
+    ex:longitude 1.137493e+02 ;
+    ex:name "Dongguan" ;
+    ex:population 7981000 ;
+    owl:sameAs ex:Dongguan ;
+    owl:topDataProperty "Dongguan",
+        "Guangdong",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Egypt a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Cairo ;
+    ex:isCountryOf ex:Cairo ;
+    ex:iso2Code "EG" ;
+    ex:iso3_code "EGY" ;
+    ex:name "Egypt" ;
+    owl:sameAs ex:Egypt ;
+    owl:topDataProperty "EG" ;
+    owl:topObjectProperty ex:Cairo .
+
+ex:Foshan a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guangdong" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Foshan" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.30292e+01 ;
+    ex:longitude 1.131056e+02 ;
+    ex:name "Foshan" ;
+    ex:population 7194311 ;
+    owl:sameAs ex:Foshan ;
+    owl:topDataProperty "Foshan",
+        "Guangdong",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:France a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Paris ;
+    ex:isCountryOf ex:Paris ;
+    ex:iso2Code "FR" ;
+    ex:iso3_code "FRA" ;
+    ex:name "France" ;
+    owl:sameAs ex:France ;
+    owl:topDataProperty "FR" ;
+    owl:topObjectProperty ex:Paris .
+
+ex:Fuyang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Anhui" ;
+    ex:cityAscii "Fuyang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.28986e+01 ;
+    ex:longitude 1.158045e+02 ;
+    ex:name "Fuyang" ;
+    ex:population 8360000 ;
+    owl:sameAs ex:Fuyang ;
+    owl:topDataProperty "Anhui",
+        "Fuyang" ;
+    owl:topObjectProperty ex:China .
+
+ex:Ganzhou a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jiangxi" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Ganzhou" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.58292e+01 ;
+    ex:longitude 1.149336e+02 ;
+    ex:name "Ganzhou" ;
+    ex:population 8677600 ;
+    owl:sameAs ex:Ganzhou ;
+    owl:topDataProperty "Ganzhou",
+        "Jiangxi",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Guangzhou a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guangdong" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Guangzhou" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.31288e+01 ;
+    ex:longitude 1.13259e+02 ;
+    ex:name "Guangzhou" ;
+    ex:population 20902000 ;
+    owl:sameAs ex:Guangzhou ;
+    owl:topDataProperty "Guangdong",
+        "Guangzhou",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Handan a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hebei" ;
+    ex:cityAscii "Handan" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.66116e+01 ;
+    ex:longitude 1.144894e+02 ;
+    ex:name "Handan" ;
+    ex:population 8499000 ;
+    owl:sameAs ex:Handan ;
+    owl:topDataProperty "Handan",
+        "Hebei" ;
+    owl:topObjectProperty ex:China .
+
+ex:Hangzhou a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Zhejiang" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Hangzhou" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.025e+01 ;
+    ex:longitude 1.201675e+02 ;
+    ex:name "Hangzhou" ;
+    ex:population 6446000 ;
+    owl:sameAs ex:Hangzhou ;
+    owl:topDataProperty "Hangzhou",
+        "Zhejiang",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Hefei a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Anhui" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Hefei" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.18639e+01 ;
+    ex:longitude 1.172808e+02 ;
+    ex:name "Hefei" ;
+    ex:population 7457027 ;
+    owl:sameAs ex:Hefei ;
+    owl:topDataProperty "Anhui",
+        "Hefei",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Hengyang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hunan" ;
+    ex:cityAscii "Hengyang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.68968e+01 ;
+    ex:longitude 1.125857e+02 ;
+    ex:name "Hengyang" ;
+    ex:population 7148344 ;
+    owl:sameAs ex:Hengyang ;
+    owl:topDataProperty "Hengyang",
+        "Hunan" ;
+    owl:topObjectProperty ex:China .
+
+ex:Heze a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Shandong" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Heze" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.52333e+01 ;
+    ex:longitude 1.154333e+02 ;
+    ex:name "Heze" ;
+    ex:population 8750000 ;
+    owl:sameAs ex:Heze ;
+    owl:topDataProperty "Heze",
+        "Shandong",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Ho_Chi_Minh_City a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hồ Chí Minh" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Ho Chi Minh City" ;
+    ex:hasCountry ex:Vietnam ;
+    ex:lattitude 1.08167e+01 ;
+    ex:longitude 1.066333e+02 ;
+    ex:name "Ho Chi Minh City" ;
+    ex:population 13312000 ;
+    owl:sameAs ex:Ho_Chi_Minh_City ;
+    owl:topDataProperty "Ho Chi Minh City",
+        "Hồ Chí Minh",
+        "admin" ;
+    owl:topObjectProperty ex:Vietnam .
+
+ex:Huanggang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hubei" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Huanggang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.045e+01 ;
+    ex:longitude 1.14875e+02 ;
+    ex:name "Huanggang" ;
+    ex:population 6667000 ;
+    owl:sameAs ex:Huanggang ;
+    owl:topDataProperty "Huanggang",
+        "Hubei",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Hyderabad a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Telangana" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Hyderabad" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 1.73667e+01 ;
+    ex:longitude 7.84667e+01 ;
+    ex:name "Hyderābād" ;
+    ex:population 9746000 ;
+    owl:sameAs ex:Hyderabad ;
+    owl:topDataProperty "Hyderabad",
+        "Telangana",
+        "admin" ;
+    owl:topObjectProperty ex:India .
+
+ex:Indonesia a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Jakarta ;
+    ex:isCountryOf ex:Jakarta ;
+    ex:iso2Code "ID" ;
+    ex:iso3_code "IDN" ;
+    ex:name "Indonesia" ;
+    owl:sameAs ex:Indonesia ;
+    owl:topDataProperty "ID" ;
+    owl:topObjectProperty ex:Jakarta .
+
+ex:Iran a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Tehran ;
+    ex:isCountryOf ex:Tehran ;
+    ex:iso2Code "IR" ;
+    ex:iso3_code "IRN" ;
+    ex:name "Iran" ;
+    owl:sameAs ex:Iran ;
+    owl:topDataProperty "IR" ;
+    owl:topObjectProperty ex:Tehran .
+
+ex:Istanbul a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "İstanbul" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Istanbul" ;
+    ex:hasCountry ex:Turkey ;
+    ex:lattitude 4.101e+01 ;
+    ex:longitude 2.89603e+01 ;
+    ex:name "Istanbul" ;
+    ex:population 15154000 ;
+    owl:sameAs ex:Istanbul ;
+    owl:topDataProperty "Istanbul",
+        "admin",
+        "İstanbul" ;
+    owl:topObjectProperty ex:Turkey .
+
+ex:Jining a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Shandong" ;
+    ex:cityAscii "Jining" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.54e+01 ;
+    ex:longitude 1.165667e+02 ;
+    ex:name "Jining" ;
+    ex:population 8023000 ;
+    owl:sameAs ex:Jining ;
+    owl:topDataProperty "Jining",
+        "Shandong" ;
+    owl:topObjectProperty ex:China .
+
+ex:Karachi a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Sindh" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Karachi" ;
+    ex:hasCountry ex:Pakistan ;
+    ex:lattitude 2.486e+01 ;
+    ex:longitude 6.701e+01 ;
+    ex:name "Karachi" ;
+    ex:population 14835000 ;
+    owl:sameAs ex:Karachi ;
+    owl:topDataProperty "Karachi",
+        "Sindh",
+        "admin" ;
+    owl:topObjectProperty ex:Pakistan .
+
+ex:Kolkata a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "West Bengal" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Kolkata" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 2.25411e+01 ;
+    ex:longitude 8.83378e+01 ;
+    ex:name "Kolkāta" ;
+    ex:population 17560000 ;
+    owl:sameAs ex:Kolkata ;
+    owl:topDataProperty "Kolkata",
+        "West Bengal",
+        "admin" ;
+    owl:topObjectProperty ex:India .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Korea,_South> a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Seoul ;
+    ex:isCountryOf ex:Seoul ;
+    ex:iso2Code "KR" ;
+    ex:iso3_code "KOR" ;
+    ex:name "Korea, South" ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Korea,_South> ;
+    owl:topDataProperty "KR" ;
+    owl:topObjectProperty ex:Seoul .
+
+ex:Kunming a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Yunnan" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Kunming" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.50433e+01 ;
+    ex:longitude 1.027061e+02 ;
+    ex:name "Kunming" ;
+    ex:population 6250000 ;
+    owl:sameAs ex:Kunming ;
+    owl:topDataProperty "Kunming",
+        "Yunnan",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Lagos a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Lagos" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Lagos" ;
+    ex:hasCountry ex:Nigeria ;
+    ex:lattitude 6.45e+00 ;
+    ex:longitude 3.4e+00 ;
+    ex:name "Lagos" ;
+    ex:population 15279000 ;
+    owl:sameAs ex:Lagos ;
+    owl:topDataProperty "Lagos",
+        "minor" ;
+    owl:topObjectProperty ex:Nigeria .
+
+ex:Lahore a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Punjab" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Lahore" ;
+    ex:hasCountry ex:Pakistan ;
+    ex:lattitude 3.15497e+01 ;
+    ex:longitude 7.43436e+01 ;
+    ex:name "Lahore" ;
+    ex:population 11021000 ;
+    owl:sameAs ex:Lahore ;
+    owl:topDataProperty "Lahore",
+        "Punjab",
+        "admin" ;
+    owl:topObjectProperty ex:Pakistan .
+
+ex:Linyi a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Shandong" ;
+    ex:cityAscii "Linyi" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.50606e+01 ;
+    ex:longitude 1.183425e+02 ;
+    ex:name "Linyi" ;
+    ex:population 10820000 ;
+    owl:sameAs ex:Linyi ;
+    owl:topDataProperty "Linyi",
+        "Shandong" ;
+    owl:topObjectProperty ex:China .
+
+ex:Los_Angeles a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "California" ;
+    ex:cityAscii "Los Angeles" ;
+    ex:hasCountry ex:United_States ;
+    ex:lattitude 3.41139e+01 ;
+    ex:longitude -1.184068e+02 ;
+    ex:name "Los Angeles" ;
+    ex:population 12750807 ;
+    owl:sameAs ex:Los_Angeles ;
+    owl:topDataProperty "California",
+        "Los Angeles" ;
+    owl:topObjectProperty ex:United_States .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Lu'an> a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Anhui" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Lu'an" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.17542e+01 ;
+    ex:longitude 1.165078e+02 ;
+    ex:name "Lu’an" ;
+    ex:population 6090000 ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Lu'an> ;
+    owl:topDataProperty "Anhui",
+        "Lu'an",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Luoyang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Henan" ;
+    ex:cityAscii "Luoyang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.46587e+01 ;
+    ex:longitude 1.124245e+02 ;
+    ex:name "Luoyang" ;
+    ex:population 6549941 ;
+    owl:sameAs ex:Luoyang ;
+    owl:topDataProperty "Henan",
+        "Luoyang" ;
+    owl:topObjectProperty ex:China .
+
+ex:Malaysia a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Kuala_Lumpur ;
+    ex:isCountryOf ex:Kuala_Lumpur ;
+    ex:iso2Code "MY" ;
+    ex:iso3_code "MYS" ;
+    ex:name "Malaysia" ;
+    owl:sameAs ex:Malaysia ;
+    owl:topDataProperty "MY" ;
+    owl:topObjectProperty ex:Kuala_Lumpur .
+
+ex:Maoming a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guangdong" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Maoming" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.16618e+01 ;
+    ex:longitude 1.109178e+02 ;
+    ex:name "Maoming" ;
+    ex:population 6706000 ;
+    owl:sameAs ex:Maoming ;
+    owl:topDataProperty "Guangdong",
+        "Maoming",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Mexico a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Mexico_City ;
+    ex:isCountryOf ex:Mexico_City ;
+    ex:iso2Code "MX" ;
+    ex:iso3_code "MEX" ;
+    ex:name "Mexico" ;
+    owl:sameAs ex:Mexico ;
+    owl:topDataProperty "MX" ;
+    owl:topObjectProperty ex:Mexico_City .
+
+ex:Miami a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Florida" ;
+    ex:cityAscii "Miami" ;
+    ex:hasCountry ex:United_States ;
+    ex:lattitude 2.57839e+01 ;
+    ex:longitude -8.02102e+01 ;
+    ex:name "Miami" ;
+    ex:population 6445545 ;
+    owl:sameAs ex:Miami ;
+    owl:topDataProperty "Florida",
+        "Miami" ;
+    owl:topObjectProperty ex:United_States .
+
+ex:Mumbai a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Mahārāshtra" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Mumbai" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 1.89667e+01 ;
+    ex:longitude 7.28333e+01 ;
+    ex:name "Mumbai" ;
+    ex:population 23355000 ;
+    owl:sameAs ex:Mumbai ;
+    owl:topDataProperty "Mahārāshtra",
+        "Mumbai",
+        "admin" ;
+    owl:topObjectProperty ex:India .
+
+ex:Nagoya a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Aichi" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Nagoya" ;
+    ex:hasCountry ex:Japan ;
+    ex:lattitude 3.51167e+01 ;
+    ex:longitude 1.369333e+02 ;
+    ex:name "Nagoya" ;
+    ex:population 9113000 ;
+    owl:sameAs ex:Nagoya ;
+    owl:topDataProperty "Aichi",
+        "Nagoya",
+        "admin" ;
+    owl:topObjectProperty ex:Japan .
+
+ex:Nanchong a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Sichuan" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Nanchong" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.07991e+01 ;
+    ex:longitude 1.060784e+02 ;
+    ex:name "Nanchong" ;
+    ex:population 6183000 ;
+    owl:sameAs ex:Nanchong ;
+    owl:topDataProperty "Nanchong",
+        "Sichuan",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Nanjing a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jiangsu" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Nanjing" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.205e+01 ;
+    ex:longitude 1.187667e+02 ;
+    ex:name "Nanjing" ;
+    ex:population 7496000 ;
+    owl:sameAs ex:Nanjing ;
+    owl:topDataProperty "Jiangsu",
+        "Nanjing",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Nanning a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guangxi" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Nanning" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.28192e+01 ;
+    ex:longitude 1.08315e+02 ;
+    ex:name "Nanning" ;
+    ex:population 7153300 ;
+    owl:sameAs ex:Nanning ;
+    owl:topDataProperty "Guangxi",
+        "Nanning",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Nantong a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jiangsu" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Nantong" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.19829e+01 ;
+    ex:longitude 1.208873e+02 ;
+    ex:name "Nantong" ;
+    ex:population 7282835 ;
+    owl:sameAs ex:Nantong ;
+    owl:topDataProperty "Jiangsu",
+        "Nantong",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Nanyang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Henan" ;
+    ex:cityAscii "Nanyang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.29987e+01 ;
+    ex:longitude 1.125292e+02 ;
+    ex:name "Nanyang" ;
+    ex:population 12010000 ;
+    owl:sameAs ex:Nanyang ;
+    owl:topDataProperty "Henan",
+        "Nanyang" ;
+    owl:topObjectProperty ex:China .
+
+ex:New_York a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "New York" ;
+    ex:cityAscii "New York" ;
+    ex:hasCountry ex:United_States ;
+    ex:lattitude 4.06943e+01 ;
+    ex:longitude -7.39249e+01 ;
+    ex:name "New York" ;
+    ex:population 18713220 ;
+    owl:sameAs ex:New_York ;
+    owl:topDataProperty "New York" ;
+    owl:topObjectProperty ex:United_States .
+
+ex:Ningbo a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Zhejiang" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Ningbo" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.9875e+01 ;
+    ex:longitude 1.215492e+02 ;
+    ex:name "Ningbo" ;
+    ex:population 7639000 ;
+    owl:sameAs ex:Ningbo ;
+    owl:topDataProperty "Ningbo",
+        "Zhejiang",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Onitsha a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Anambra" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Onitsha" ;
+    ex:hasCountry ex:Nigeria ;
+    ex:lattitude 6.1667e+00 ;
+    ex:longitude 6.7833e+00 ;
+    ex:name "Onitsha" ;
+    ex:population 7635000 ;
+    owl:sameAs ex:Onitsha ;
+    owl:topDataProperty "Anambra",
+        "Onitsha",
+        "minor" ;
+    owl:topObjectProperty ex:Nigeria .
+
+ex:Osaka a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Ōsaka" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Osaka" ;
+    ex:hasCountry ex:Japan ;
+    ex:lattitude 3.46936e+01 ;
+    ex:longitude 1.355019e+02 ;
+    ex:name "Ōsaka" ;
+    ex:population 14977000 ;
+    owl:sameAs ex:Osaka ;
+    owl:topDataProperty "Osaka",
+        "admin",
+        "Ōsaka" ;
+    owl:topObjectProperty ex:Japan .
+
+ex:Peru a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Lima ;
+    ex:isCountryOf ex:Lima ;
+    ex:iso2Code "PE" ;
+    ex:iso3_code "PER" ;
+    ex:name "Peru" ;
+    owl:sameAs ex:Peru ;
+    owl:topDataProperty "PE" ;
+    owl:topObjectProperty ex:Lima .
+
+ex:Philippines a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Manila ;
+    ex:isCountryOf ex:Manila ;
+    ex:iso2Code "PH" ;
+    ex:iso3_code "PHL" ;
+    ex:name "Philippines" ;
+    owl:sameAs ex:Philippines ;
+    owl:topDataProperty "PH" ;
+    owl:topObjectProperty ex:Manila .
+
+ex:Pune a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Mahārāshtra" ;
+    ex:cityAscii "Pune" ;
+    ex:hasCountry ex:India ;
+    ex:lattitude 1.85196e+01 ;
+    ex:longitude 7.38553e+01 ;
+    ex:name "Pune" ;
+    ex:population 7764000 ;
+    owl:sameAs ex:Pune ;
+    owl:topDataProperty "Mahārāshtra",
+        "Pune" ;
+    owl:topObjectProperty ex:India .
+
+ex:Quanzhou a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Fujian" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Quanzhou" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.49139e+01 ;
+    ex:longitude 1.185858e+02 ;
+    ex:name "Quanzhou" ;
+    ex:population 6480000 ;
+    owl:sameAs ex:Quanzhou ;
+    owl:topDataProperty "Fujian",
+        "Quanzhou",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Rio_de_Janeiro a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Rio de Janeiro" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Rio de Janeiro" ;
+    ex:hasCountry ex:Brazil ;
+    ex:lattitude -2.29083e+01 ;
+    ex:longitude -4.31964e+01 ;
+    ex:name "Rio de Janeiro" ;
+    ex:population 12272000 ;
+    owl:sameAs ex:Rio_de_Janeiro ;
+    owl:topDataProperty "Rio de Janeiro",
+        "admin" ;
+    owl:topObjectProperty ex:Brazil .
+
+ex:Russia a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Moscow ;
+    ex:isCountryOf ex:Moscow ;
+    ex:iso2Code "RU" ;
+    ex:iso3_code "RUS" ;
+    ex:name "Russia" ;
+    owl:sameAs ex:Russia ;
+    owl:topDataProperty "RU" ;
+    owl:topObjectProperty ex:Moscow .
+
+ex:Sao_Paulo a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "São Paulo" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Sao Paulo" ;
+    ex:hasCountry ex:Brazil ;
+    ex:lattitude -2.35504e+01 ;
+    ex:longitude -4.66339e+01 ;
+    ex:name "São Paulo" ;
+    ex:population 22046000 ;
+    owl:sameAs ex:Sao_Paulo ;
+    owl:topDataProperty "Sao Paulo",
+        "São Paulo",
+        "admin" ;
+    owl:topObjectProperty ex:Brazil .
+
+ex:Saudi_Arabia a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Riyadh ;
+    ex:isCountryOf ex:Riyadh ;
+    ex:iso2Code "SA" ;
+    ex:iso3_code "SAU" ;
+    ex:name "Saudi Arabia" ;
+    owl:sameAs ex:Saudi_Arabia ;
+    owl:topDataProperty "SA" ;
+    owl:topObjectProperty ex:Riyadh .
+
+ex:Shanghai a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Shanghai" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Shanghai" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.11667e+01 ;
+    ex:longitude 1.214667e+02 ;
+    ex:name "Shanghai" ;
+    ex:population 22120000 ;
+    owl:sameAs ex:Shanghai ;
+    owl:topDataProperty "Shanghai",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Shangrao a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jiangxi" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Shangrao" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.84419e+01 ;
+    ex:longitude 1.179633e+02 ;
+    ex:name "Shangrao" ;
+    ex:population 6579714 ;
+    owl:sameAs ex:Shangrao ;
+    owl:topDataProperty "Jiangxi",
+        "Shangrao",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Shaoyang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hunan" ;
+    ex:cityAscii "Shaoyang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.72418e+01 ;
+    ex:longitude 1.114725e+02 ;
+    ex:name "Shaoyang" ;
+    ex:population 7071000 ;
+    owl:sameAs ex:Shaoyang ;
+    owl:topDataProperty "Hunan",
+        "Shaoyang" ;
+    owl:topObjectProperty ex:China .
+
+ex:Shenyang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Liaoning" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Shenyang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 4.18039e+01 ;
+    ex:longitude 1.234258e+02 ;
+    ex:name "Shenyang" ;
+    ex:population 7105000 ;
+    owl:sameAs ex:Shenyang ;
+    owl:topDataProperty "Liaoning",
+        "Shenyang",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Shenzhen a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guangdong" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Shenzhen" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.2535e+01 ;
+    ex:longitude 1.14054e+02 ;
+    ex:name "Shenzhen" ;
+    ex:population 15929000 ;
+    owl:sameAs ex:Shenzhen ;
+    owl:topDataProperty "Guangdong",
+        "Shenzhen",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Shijiazhuang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hebei" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Shijiazhuang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.80422e+01 ;
+    ex:longitude 1.145086e+02 ;
+    ex:name "Shijiazhuang" ;
+    ex:population 10784600 ;
+    owl:sameAs ex:Shijiazhuang ;
+    owl:topDataProperty "Hebei",
+        "Shijiazhuang",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Sudan a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Khartoum ;
+    ex:isCountryOf ex:Khartoum ;
+    ex:iso2Code "SD" ;
+    ex:iso3_code "SDN" ;
+    ex:name "Sudan" ;
+    owl:sameAs ex:Sudan ;
+    owl:topDataProperty "SD" ;
+    owl:topObjectProperty ex:Khartoum .
+
+ex:Tangshan a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hebei" ;
+    ex:cityAscii "Tangshan" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.96292e+01 ;
+    ex:longitude 1.181742e+02 ;
+    ex:name "Tangshan" ;
+    ex:population 7100000 ;
+    owl:sameAs ex:Tangshan ;
+    owl:topDataProperty "Hebei",
+        "Tangshan" ;
+    owl:topObjectProperty ex:China .
+
+ex:Tanzania a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Dar_es_Salaam ;
+    ex:isCountryOf ex:Dar_es_Salaam ;
+    ex:iso2Code "TZ" ;
+    ex:iso3_code "TZA" ;
+    ex:name "Tanzania" ;
+    owl:sameAs ex:Tanzania ;
+    owl:topDataProperty "TZ" ;
+    owl:topObjectProperty ex:Dar_es_Salaam .
+
+ex:Thailand a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Bangkok ;
+    ex:isCountryOf ex:Bangkok ;
+    ex:iso2Code "TH" ;
+    ex:iso3_code "THA" ;
+    ex:name "Thailand" ;
+    owl:sameAs ex:Thailand ;
+    owl:topDataProperty "TH" ;
+    owl:topObjectProperty ex:Bangkok .
+
+ex:Tianjin a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Tianjin" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Tianjin" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.91467e+01 ;
+    ex:longitude 1.172056e+02 ;
+    ex:name "Tianjin" ;
+    ex:population 10800000 ;
+    owl:sameAs ex:Tianjin ;
+    owl:topDataProperty "Tianjin",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Tongshan a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jiangsu" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Tongshan" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.4261e+01 ;
+    ex:longitude 1.171859e+02 ;
+    ex:name "Tongshan" ;
+    ex:population 8669000 ;
+    owl:sameAs ex:Tongshan ;
+    owl:topDataProperty "Jiangsu",
+        "Tongshan",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Turkey a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:isCountryOf ex:Istanbul ;
+    ex:iso2Code "TR" ;
+    ex:iso3_code "TUR" ;
+    ex:name "Turkey" ;
+    owl:sameAs ex:Turkey ;
+    owl:topDataProperty "TR" ;
+    owl:topObjectProperty ex:Istanbul .
+
+ex:United_Kingdom a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:London ;
+    ex:isCountryOf ex:London ;
+    ex:iso2Code "GB" ;
+    ex:iso3_code "GBR" ;
+    ex:name "United Kingdom" ;
+    owl:sameAs ex:United_Kingdom ;
+    owl:topDataProperty "GB" ;
+    owl:topObjectProperty ex:London .
+
+ex:Weifang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Shandong" ;
+    ex:cityAscii "Weifang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.67167e+01 ;
+    ex:longitude 1.191e+02 ;
+    ex:name "Weifang" ;
+    ex:population 9373000 ;
+    owl:sameAs ex:Weifang ;
+    owl:topDataProperty "Shandong",
+        "Weifang" ;
+    owl:topObjectProperty ex:China .
+
+ex:Wuhan a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hubei" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Wuhan" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.05872e+01 ;
+    ex:longitude 1.142881e+02 ;
+    ex:name "Wuhan" ;
+    ex:population 8962000 ;
+    owl:sameAs ex:Wuhan ;
+    owl:topDataProperty "Hubei",
+        "Wuhan",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Xi'an> a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Shaanxi" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Xi'an" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.42667e+01 ;
+    ex:longitude 1.089e+02 ;
+    ex:name "Xi’an" ;
+    ex:population 7135000 ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Xi'an> ;
+    owl:topDataProperty "Shaanxi",
+        "Xi'an",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Xinyang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Henan" ;
+    ex:cityAscii "Xinyang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.21264e+01 ;
+    ex:longitude 1.140672e+02 ;
+    ex:name "Xinyang" ;
+    ex:population 6634000 ;
+    owl:sameAs ex:Xinyang ;
+    owl:topDataProperty "Henan",
+        "Xinyang" ;
+    owl:topObjectProperty ex:China .
+
+ex:Yancheng a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jiangsu" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Yancheng" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.33936e+01 ;
+    ex:longitude 1.201339e+02 ;
+    ex:name "Yancheng" ;
+    ex:population 7260240 ;
+    owl:sameAs ex:Yancheng ;
+    owl:topDataProperty "Jiangsu",
+        "Yancheng",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Yantai a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Shandong" ;
+    ex:cityAscii "Yantai" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.73997e+01 ;
+    ex:longitude 1.212664e+02 ;
+    ex:name "Yantai" ;
+    ex:population 6516900 ;
+    owl:sameAs ex:Yantai ;
+    owl:topDataProperty "Shandong",
+        "Yantai" ;
+    owl:topObjectProperty ex:China .
+
+ex:Yichun a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jiangxi" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Yichun" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.78041e+01 ;
+    ex:longitude 1.14383e+02 ;
+    ex:name "Yichun" ;
+    ex:population 6048700 ;
+    owl:sameAs ex:Yichun ;
+    owl:topDataProperty "Jiangxi",
+        "Yichun",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Zhanjiang a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guangdong" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Zhanjiang" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.11967e+01 ;
+    ex:longitude 1.104031e+02 ;
+    ex:name "Zhanjiang" ;
+    ex:population 6900000 ;
+    owl:sameAs ex:Zhanjiang ;
+    owl:topDataProperty "Guangdong",
+        "Zhanjiang",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Zhengzhou a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Henan" ;
+    ex:capitalStatus "admin" ;
+    ex:cityAscii "Zhengzhou" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.47492e+01 ;
+    ex:longitude 1.136605e+02 ;
+    ex:name "Zhengzhou" ;
+    ex:population 7005000 ;
+    owl:sameAs ex:Zhengzhou ;
+    owl:topDataProperty "Henan",
+        "Zhengzhou",
+        "admin" ;
+    owl:topObjectProperty ex:China .
+
+ex:Zhoukou a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Henan" ;
+    ex:capitalStatus "minor" ;
+    ex:cityAscii "Zhoukou" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.3625e+01 ;
+    ex:longitude 1.146418e+02 ;
+    ex:name "Zhoukou" ;
+    ex:population 9901000 ;
+    owl:sameAs ex:Zhoukou ;
+    owl:topDataProperty "Henan",
+        "Zhoukou",
+        "minor" ;
+    owl:topObjectProperty ex:China .
+
+ex:Zhumadian a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Henan" ;
+    ex:cityAscii "Zhumadian" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.29773e+01 ;
+    ex:longitude 1.140253e+02 ;
+    ex:name "Zhumadian" ;
+    ex:population 7640000 ;
+    owl:sameAs ex:Zhumadian ;
+    owl:topDataProperty "Henan",
+        "Zhumadian" ;
+    owl:topObjectProperty ex:China .
+
+ex:Zunyi a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Guizhou" ;
+    ex:cityAscii "Zunyi" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 2.7705e+01 ;
+    ex:longitude 1.069336e+02 ;
+    ex:name "Zunyi" ;
+    ex:population 6127009 ;
+    owl:sameAs ex:Zunyi ;
+    owl:topDataProperty "Guizhou",
+        "Zunyi" ;
+    owl:topObjectProperty ex:China .
+
+ex:adminName a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf ex:adminName,
+        owl:topDataProperty ;
+    owl:equivalentProperty ex:adminName ;
+    owl:sameAs ex:adminName .
+
+ex:capitalStatus a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf ex:capitalStatus,
+        owl:topDataProperty ;
+    owl:equivalentProperty ex:capitalStatus ;
+    owl:sameAs ex:capitalStatus .
+
+ex:cityAscii a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf ex:cityAscii,
+        owl:topDataProperty ;
+    owl:equivalentProperty ex:cityAscii ;
+    owl:sameAs ex:cityAscii .
+
+ex:hasCapital a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:hasCapital,
+        ex:isCountryOf,
+        owl:topObjectProperty ;
+    owl:equivalentProperty ex:hasCapital ;
+    owl:sameAs ex:hasCapital .
+
+ex:hasCountry a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:hasCountry,
+        owl:topObjectProperty ;
+    owl:equivalentProperty ex:hasCountry ;
+    owl:inverseOf ex:isCountryOf ;
+    owl:sameAs ex:hasCountry .
+
+ex:iso2Code a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf ex:iso2Code,
+        owl:topDataProperty ;
+    owl:equivalentProperty ex:iso2Code ;
+    owl:sameAs ex:iso2Code .
+
+ex:iso3code a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf ex:iso3code,
+        owl:topDataProperty ;
+    owl:equivalentProperty ex:iso3code ;
+    owl:sameAs ex:iso3code .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#lattitude> a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#lattitude>,
+        owl:topDataProperty ;
+    owl:equivalentProperty <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#lattitude> ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#lattitude> .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#longitude> a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#longitude>,
+        owl:topDataProperty ;
+    owl:equivalentProperty <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#longitude> ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#longitude> .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#name> a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#name>,
+        owl:topDataProperty ;
+    owl:equivalentProperty <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#name> ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#name> .
+
+<http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#population> a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range xsd:int ;
+    rdfs:subPropertyOf <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#population>,
+        owl:topDataProperty ;
+    owl:equivalentProperty <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#population> ;
+    owl:sameAs <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab6#population> .
+
+rdfs:comment a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:equivalentProperty rdfs:comment ;
+    owl:sameAs rdfs:comment .
+
+rdfs:isDefinedBy a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdfs:isDefinedBy ;
+    owl:equivalentProperty rdfs:isDefinedBy ;
+    owl:sameAs rdfs:isDefinedBy .
+
+rdfs:label a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf rdfs:label ;
+    owl:equivalentProperty rdfs:label ;
+    owl:sameAs rdfs:label .
+
+rdfs:seeAlso a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    owl:equivalentProperty rdfs:seeAlso ;
+    owl:sameAs rdfs:seeAlso .
+
+xsd:nonNegativeInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:nonNegativeInteger .
+
+owl:allValuesFrom a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:range rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:allValuesFrom ;
+    owl:equivalentProperty owl:allValuesFrom ;
+    owl:sameAs owl:allValuesFrom .
+
+owl:assertionProperty a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:NegativePropertyAssertion,
+        owl:Thing ;
+    rdfs:range rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:assertionProperty ;
+    owl:equivalentProperty owl:assertionProperty ;
+    owl:sameAs owl:assertionProperty .
+
+owl:backwardCompatibleWith a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:OntologyProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:range rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:backwardCompatibleWith ;
+    owl:equivalentProperty owl:backwardCompatibleWith ;
+    owl:sameAs owl:backwardCompatibleWith .
+
+owl:complementOf a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:range rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:complementOf ;
+    owl:equivalentProperty owl:complementOf ;
+    owl:sameAs owl:complementOf .
+
+owl:deprecated a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:deprecated ;
+    owl:equivalentProperty owl:deprecated ;
+    owl:sameAs owl:deprecated .
+
+owl:differentFrom a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:differentFrom ;
+    owl:equivalentProperty owl:differentFrom ;
+    owl:sameAs owl:differentFrom .
+
+owl:disjointWith a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:range rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:disjointWith ;
+    owl:equivalentProperty owl:disjointWith ;
+    owl:sameAs owl:disjointWith .
+
+owl:distinctMembers a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:AllDifferent,
+        owl:Thing ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf owl:distinctMembers ;
+    owl:equivalentProperty owl:distinctMembers ;
+    owl:sameAs owl:distinctMembers .
+
+owl:equivalentClass a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:range rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:equivalentClass ;
+    owl:equivalentProperty owl:equivalentClass ;
+    owl:sameAs owl:equivalentClass .
+
+owl:equivalentProperty a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:range rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:equivalentProperty ;
+    owl:equivalentProperty owl:equivalentProperty ;
+    owl:sameAs owl:equivalentProperty .
+
+owl:hasKey a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf owl:hasKey ;
+    owl:equivalentProperty owl:hasKey ;
+    owl:sameAs owl:hasKey .
+
+owl:hasValue a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:hasValue ;
+    owl:equivalentProperty owl:hasValue ;
+    owl:sameAs owl:hasValue .
+
+owl:imports a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:OntologyProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:range rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:imports ;
+    owl:equivalentProperty owl:imports ;
+    owl:sameAs owl:imports .
+
+owl:incompatibleWith a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:OntologyProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:range rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:incompatibleWith ;
+    owl:equivalentProperty owl:incompatibleWith ;
+    owl:sameAs owl:incompatibleWith .
+
+owl:intersectionOf a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf owl:intersectionOf ;
+    owl:equivalentProperty owl:intersectionOf ;
+    owl:sameAs owl:intersectionOf .
+
+owl:inverseOf a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:range rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:inverseOf ;
+    owl:equivalentProperty owl:inverseOf ;
+    owl:sameAs owl:inverseOf .
+
+owl:maxCardinality a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf owl:maxCardinality ;
+    owl:equivalentProperty owl:maxCardinality ;
+    owl:sameAs owl:maxCardinality .
+
+owl:maxQualifiedCardinality a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:range xsd:nonNegativeInteger ;
+    rdfs:subPropertyOf owl:maxQualifiedCardinality ;
+    owl:equivalentProperty owl:maxQualifiedCardinality ;
+    owl:sameAs owl:maxQualifiedCardinality .
+
+owl:members a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf owl:members ;
+    owl:equivalentProperty owl:members ;
+    owl:sameAs owl:members .
+
+owl:onClass a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:range rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:onClass ;
+    owl:equivalentProperty owl:onClass ;
+    owl:sameAs owl:onClass .
+
+owl:onDatatype a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:range rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:onDatatype ;
+    owl:equivalentProperty owl:onDatatype ;
+    owl:sameAs owl:onDatatype .
+
+owl:onProperty a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:range rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:onProperty ;
+    owl:equivalentProperty owl:onProperty ;
+    owl:sameAs owl:onProperty .
+
+owl:oneOf a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf owl:oneOf ;
+    owl:equivalentProperty owl:oneOf ;
+    owl:sameAs owl:oneOf .
+
+owl:priorVersion a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:OntologyProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:range rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:priorVersion ;
+    owl:equivalentProperty owl:priorVersion ;
+    owl:sameAs owl:priorVersion .
+
+owl:propertyChainAxiom a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf owl:propertyChainAxiom ;
+    owl:equivalentProperty owl:propertyChainAxiom ;
+    owl:sameAs owl:propertyChainAxiom .
+
+owl:sameAs a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:sameAs ;
+    owl:equivalentProperty owl:sameAs ;
+    owl:sameAs owl:sameAs .
+
+owl:someValuesFrom a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:range rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:someValuesFrom ;
+    owl:equivalentProperty owl:someValuesFrom ;
+    owl:sameAs owl:someValuesFrom .
+
+owl:sourceIndividual a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:NegativePropertyAssertion,
+        owl:Thing ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:sourceIndividual ;
+    owl:equivalentProperty owl:sourceIndividual ;
+    owl:sameAs owl:sourceIndividual .
+
+owl:targetIndividual a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:NegativePropertyAssertion,
+        owl:Thing ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:targetIndividual ;
+    owl:equivalentProperty owl:targetIndividual ;
+    owl:sameAs owl:targetIndividual .
+
+owl:targetValue a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource,
+        owl:NegativePropertyAssertion,
+        owl:Thing ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf owl:targetValue ;
+    owl:equivalentProperty owl:targetValue ;
+    owl:sameAs owl:targetValue .
+
+owl:unionOf a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:range rdf:List,
+        rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:unionOf ;
+    owl:equivalentProperty owl:unionOf ;
+    owl:sameAs owl:unionOf .
+
+owl:versionIRI a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:versionIRI ;
+    owl:equivalentProperty owl:versionIRI ;
+    owl:sameAs owl:versionIRI .
+
+owl:versionInfo a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:versionInfo ;
+    owl:equivalentProperty owl:versionInfo ;
+    owl:sameAs owl:versionInfo .
+
+owl:withRestrictions a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf owl:withRestrictions ;
+    owl:equivalentProperty owl:withRestrictions ;
+    owl:sameAs owl:withRestrictions .
+
+"NaN"^^xsd:double a rdfs:Resource,
+        xsd:double,
+        xsd:string,
+        owl:Thing ;
+    owl:sameAs "NaN"^^xsd:double .
+
+"AO" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "AO" .
+
+"AR" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "AR" .
+
+"Ahmadabad" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Ahmadabad" .
+
+"Aichi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Aichi" .
+
+"Al Qāhirah" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Al Qāhirah" .
+
+"Anambra" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Anambra" .
+
+"Ar Riyāḑ" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Ar Riyāḑ" .
+
+"BD" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "BD" .
+
+"BR" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "BR" .
+
+"Bogota" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Bogota" .
+
+"Buenos Aires, Ciudad Autónoma de" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Buenos Aires, Ciudad Autónoma de" .
+
+"CD" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "CD" .
+
+"CL" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "CL" .
+
+"CN" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "CN" .
+
+"CO" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "CO" .
+
+"California" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "California" .
+
+"Ciudad de México" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Ciudad de México" .
+
+"EG" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "EG" .
+
+"FR" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "FR" .
+
+"Florida" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Florida" .
+
+"Fujian" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Fujian" .
+
+"GB" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "GB" .
+
+"Guangxi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Guangxi" .
+
+"Gujarāt" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Gujarāt" .
+
+"HK" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "HK" .
+
+"Hyderabad" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hyderabad" .
+
+"Hà Nội" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hà Nội" .
+
+"Hồ Chí Minh" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hồ Chí Minh" .
+
+"ID" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "ID" .
+
+"IN" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "IN" .
+
+"IR" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "IR" .
+
+"Illinois" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Illinois" .
+
+"JP" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "JP" .
+
+"Jilin" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Jilin" .
+
+"KR" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "KR" .
+
+"Karnātaka" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Karnātaka" .
+
+"Kolkata" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Kolkata" .
+
+"Krung Thep Maha Nakhon" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Krung Thep Maha Nakhon" .
+
+"Liaoning" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Liaoning" .
+
+"London, City of" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "London, City of" .
+
+"Lu'an" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Lu'an" .
+
+"MX" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "MX" .
+
+"MY" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "MY" .
+
+"Moskva" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Moskva" .
+
+"NG" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "NG" .
+
+"Osaka" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Osaka" .
+
+"PE" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "PE" .
+
+"PH" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "PH" .
+
+"PK" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "PK" .
+
+"Punjab" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Punjab" .
+
+"RU" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "RU" .
+
+"Región Metropolitana" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Región Metropolitana" .
+
+"SA" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "SA" .
+
+"SD" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "SD" .
+
+"Sao Paulo" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Sao Paulo" .
+
+"Shaanxi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shaanxi" .
+
+"Sindh" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Sindh" .
+
+"TH" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "TH" .
+
+"TR" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "TR" .
+
+"TZ" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "TZ" .
+
+"Tamil Nādu" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tamil Nādu" .
+
+"Tehrān" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tehrān" .
+
+"Telangana" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Telangana" .
+
+"Tōkyō" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tōkyō" .
+
+"US" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "US" .
+
+"VN" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "VN" .
+
+"West Bengal" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "West Bengal" .
+
+"Xi'an" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Xi'an" .
+
+"Yunnan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Yunnan" .
+
+"Île-de-France" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Île-de-France" .
+
+"İstanbul" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "İstanbul" .
+
+ex:Bangkok a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Krung Thep Maha Nakhon" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Bangkok" ;
+    ex:hasCountry ex:Thailand ;
+    ex:lattitude 1.375e+01 ;
+    ex:longitude 1.005167e+02 ;
+    ex:name "Bangkok" ;
+    ex:population 17066000 ;
+    owl:sameAs ex:Bangkok ;
+    owl:topDataProperty "Bangkok",
+        "Krung Thep Maha Nakhon",
+        "primary" ;
+    owl:topObjectProperty ex:Thailand .
+
+ex:Beijing a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Beijing" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Beijing" ;
+    ex:hasCountry ex:China ;
+    ex:lattitude 3.9905e+01 ;
+    ex:longitude 1.163914e+02 ;
+    ex:name "Beijing" ;
+    ex:population 19433000 ;
+    owl:sameAs ex:Beijing ;
+    owl:topDataProperty "Beijing",
+        "primary" ;
+    owl:topObjectProperty ex:China .
+
+ex:Bogota a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Bogotá" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Bogota" ;
+    ex:hasCountry ex:Colombia ;
+    ex:lattitude 4.6126e+00 ;
+    ex:longitude -7.40705e+01 ;
+    ex:name "Bogotá" ;
+    ex:population 9464000 ;
+    owl:sameAs ex:Bogota ;
+    owl:topDataProperty "Bogota",
+        "Bogotá",
+        "primary" ;
+    owl:topObjectProperty ex:Colombia .
+
+ex:Buenos_Aires a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Buenos Aires, Ciudad Autónoma de" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Buenos Aires" ;
+    ex:hasCountry ex:Argentina ;
+    ex:lattitude -3.45997e+01 ;
+    ex:longitude -5.83819e+01 ;
+    ex:name "Buenos Aires" ;
+    ex:population 16157000 ;
+    owl:sameAs ex:Buenos_Aires ;
+    owl:topDataProperty "Buenos Aires",
+        "Buenos Aires, Ciudad Autónoma de",
+        "primary" ;
+    owl:topObjectProperty ex:Argentina .
+
+ex:Cairo a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Al Qāhirah" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Cairo" ;
+    ex:hasCountry ex:Egypt ;
+    ex:lattitude 3.00561e+01 ;
+    ex:longitude 3.12394e+01 ;
+    ex:name "Cairo" ;
+    ex:population 19372000 ;
+    owl:sameAs ex:Cairo ;
+    owl:topDataProperty "Al Qāhirah",
+        "Cairo",
+        "primary" ;
+    owl:topObjectProperty ex:Egypt .
+
+ex:Dar_es_Salaam a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Dar es Salaam" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Dar es Salaam" ;
+    ex:hasCountry ex:Tanzania ;
+    ex:lattitude -6.8e+00 ;
+    ex:longitude 3.92833e+01 ;
+    ex:name "Dar es Salaam" ;
+    ex:population 6698000 ;
+    owl:sameAs ex:Dar_es_Salaam ;
+    owl:topDataProperty "Dar es Salaam",
+        "primary" ;
+    owl:topObjectProperty ex:Tanzania .
+
+ex:Dhaka a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Dhaka" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Dhaka" ;
+    ex:hasCountry ex:Bangladesh ;
+    ex:lattitude 2.37161e+01 ;
+    ex:longitude 9.03961e+01 ;
+    ex:name "Dhaka" ;
+    ex:population 15443000 ;
+    owl:sameAs ex:Dhaka ;
+    owl:topDataProperty "Dhaka",
+        "primary" ;
+    owl:topObjectProperty ex:Bangladesh .
+
+ex:Hanoi a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Hà Nội" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Hanoi" ;
+    ex:hasCountry ex:Vietnam ;
+    ex:lattitude 2.10245e+01 ;
+    ex:longitude 1.058412e+02 ;
+    ex:name "Hanoi" ;
+    ex:population 7785000 ;
+    owl:sameAs ex:Hanoi ;
+    owl:topDataProperty "Hanoi",
+        "Hà Nội",
+        "primary" ;
+    owl:topObjectProperty ex:Vietnam .
+
+ex:Hong_Kong a ex:City,
+        ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "NaN"^^xsd:double ;
+    ex:cityAscii "Hong Kong" ;
+    ex:hasCountry ex:Hong_Kong ;
+    ex:isCountryOf ex:Hong_Kong ;
+    ex:iso2Code "HK" ;
+    ex:iso3_code "HKG" ;
+    ex:lattitude 2.2305e+01 ;
+    ex:longitude 1.14185e+02 ;
+    ex:name "Hong Kong" ;
+    ex:population 7347000 ;
+    owl:sameAs ex:Hong_Kong ;
+    owl:topDataProperty "NaN"^^xsd:double,
+        "HK",
+        "Hong Kong" ;
+    owl:topObjectProperty ex:Hong_Kong .
+
+ex:Jakarta a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Jakarta" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Jakarta" ;
+    ex:hasCountry ex:Indonesia ;
+    ex:lattitude -6.2146e+00 ;
+    ex:longitude 1.068451e+02 ;
+    ex:name "Jakarta" ;
+    ex:population 34540000 ;
+    owl:sameAs ex:Jakarta ;
+    owl:topDataProperty "Jakarta",
+        "primary" ;
+    owl:topObjectProperty ex:Indonesia .
+
+ex:Khartoum a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Khartoum" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Khartoum" ;
+    ex:hasCountry ex:Sudan ;
+    ex:lattitude 1.56031e+01 ;
+    ex:longitude 3.25265e+01 ;
+    ex:name "Khartoum" ;
+    ex:population 7282000 ;
+    owl:sameAs ex:Khartoum ;
+    owl:topDataProperty "Khartoum",
+        "primary" ;
+    owl:topObjectProperty ex:Sudan .
+
+ex:Kinshasa a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Kinshasa" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Kinshasa" ;
+    ex:hasCountry <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Congo_(Kinshasa)> ;
+    ex:lattitude -4.3317e+00 ;
+    ex:longitude 1.53139e+01 ;
+    ex:name "Kinshasa" ;
+    ex:population 13528000 ;
+    owl:sameAs ex:Kinshasa ;
+    owl:topDataProperty "Kinshasa",
+        "primary" ;
+    owl:topObjectProperty <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Congo_(Kinshasa)> .
+
+ex:Kuala_Lumpur a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Kuala Lumpur" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Kuala Lumpur" ;
+    ex:hasCountry ex:Malaysia ;
+    ex:lattitude 3.1478e+00 ;
+    ex:longitude 1.016953e+02 ;
+    ex:name "Kuala Lumpur" ;
+    ex:population 8285000 ;
+    owl:sameAs ex:Kuala_Lumpur ;
+    owl:topDataProperty "Kuala Lumpur",
+        "primary" ;
+    owl:topObjectProperty ex:Malaysia .
+
+ex:Lima a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Lima" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Lima" ;
+    ex:hasCountry ex:Peru ;
+    ex:lattitude -1.205e+01 ;
+    ex:longitude -7.70333e+01 ;
+    ex:name "Lima" ;
+    ex:population 9848000 ;
+    owl:sameAs ex:Lima ;
+    owl:topDataProperty "Lima",
+        "primary" ;
+    owl:topObjectProperty ex:Peru .
+
+ex:London a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "London, City of" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "London" ;
+    ex:hasCountry ex:United_Kingdom ;
+    ex:lattitude 5.15072e+01 ;
+    ex:longitude -1.275e-01 ;
+    ex:name "London" ;
+    ex:population 10979000 ;
+    owl:sameAs ex:London ;
+    owl:topDataProperty "London",
+        "London, City of",
+        "primary" ;
+    owl:topObjectProperty ex:United_Kingdom .
+
+ex:Luanda a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Luanda" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Luanda" ;
+    ex:hasCountry ex:Angola ;
+    ex:lattitude -8.8383e+00 ;
+    ex:longitude 1.32344e+01 ;
+    ex:name "Luanda" ;
+    ex:population 8417000 ;
+    owl:sameAs ex:Luanda ;
+    owl:topDataProperty "Luanda",
+        "primary" ;
+    owl:topObjectProperty ex:Angola .
+
+ex:Manila a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Manila" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Manila" ;
+    ex:hasCountry ex:Philippines ;
+    ex:lattitude 1.45958e+01 ;
+    ex:longitude 1.209772e+02 ;
+    ex:name "Manila" ;
+    ex:population 23088000 ;
+    owl:sameAs ex:Manila ;
+    owl:topDataProperty "Manila",
+        "primary" ;
+    owl:topObjectProperty ex:Philippines .
+
+ex:Mexico_City a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Ciudad de México" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Mexico City" ;
+    ex:hasCountry ex:Mexico ;
+    ex:lattitude 1.94333e+01 ;
+    ex:longitude -9.91333e+01 ;
+    ex:name "Mexico City" ;
+    ex:population 20996000 ;
+    owl:sameAs ex:Mexico_City ;
+    owl:topDataProperty "Ciudad de México",
+        "Mexico City",
+        "primary" ;
+    owl:topObjectProperty ex:Mexico .
+
+ex:Moscow a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Moskva" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Moscow" ;
+    ex:hasCountry ex:Russia ;
+    ex:lattitude 5.57558e+01 ;
+    ex:longitude 3.76178e+01 ;
+    ex:name "Moscow" ;
+    ex:population 17125000 ;
+    owl:sameAs ex:Moscow ;
+    owl:topDataProperty "Moscow",
+        "Moskva",
+        "primary" ;
+    owl:topObjectProperty ex:Russia .
+
+ex:Paris a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Île-de-France" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Paris" ;
+    ex:hasCountry ex:France ;
+    ex:lattitude 4.88566e+01 ;
+    ex:longitude 2.3522e+00 ;
+    ex:name "Paris" ;
+    ex:population 11020000 ;
+    owl:sameAs ex:Paris ;
+    owl:topDataProperty "Paris",
+        "primary",
+        "Île-de-France" ;
+    owl:topObjectProperty ex:France .
+
+ex:Riyadh a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Ar Riyāḑ" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Riyadh" ;
+    ex:hasCountry ex:Saudi_Arabia ;
+    ex:lattitude 2.465e+01 ;
+    ex:longitude 4.671e+01 ;
+    ex:name "Riyadh" ;
+    ex:population 6881000 ;
+    owl:sameAs ex:Riyadh ;
+    owl:topDataProperty "Ar Riyāḑ",
+        "Riyadh",
+        "primary" ;
+    owl:topObjectProperty ex:Saudi_Arabia .
+
+ex:Santiago a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Región Metropolitana" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Santiago" ;
+    ex:hasCountry ex:Chile ;
+    ex:lattitude -3.345e+01 ;
+    ex:longitude -7.06667e+01 ;
+    ex:name "Santiago" ;
+    ex:population 7007000 ;
+    owl:sameAs ex:Santiago ;
+    owl:topDataProperty "Región Metropolitana",
+        "Santiago",
+        "primary" ;
+    owl:topObjectProperty ex:Chile .
+
+ex:Seoul a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Seoul" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Seoul" ;
+    ex:hasCountry <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Korea,_South> ;
+    ex:lattitude 3.75833e+01 ;
+    ex:longitude 1.27e+02 ;
+    ex:name "Seoul" ;
+    ex:population 21794000 ;
+    owl:sameAs ex:Seoul ;
+    owl:topDataProperty "Seoul",
+        "primary" ;
+    owl:topObjectProperty <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Korea,_South> .
+
+ex:Tehran a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Tehrān" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Tehran" ;
+    ex:hasCountry ex:Iran ;
+    ex:lattitude 3.57e+01 ;
+    ex:longitude 5.14167e+01 ;
+    ex:name "Tehran" ;
+    ex:population 13633000 ;
+    owl:sameAs ex:Tehran ;
+    owl:topDataProperty "Tehran",
+        "Tehrān",
+        "primary" ;
+    owl:topObjectProperty ex:Iran .
+
+ex:Tokyo a ex:City,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:adminName "Tōkyō" ;
+    ex:capitalStatus "primary" ;
+    ex:cityAscii "Tokyo" ;
+    ex:hasCountry ex:Japan ;
+    ex:lattitude 3.56897e+01 ;
+    ex:longitude 1.396922e+02 ;
+    ex:name "Tokyo" ;
+    ex:population 37977000 ;
+    owl:sameAs ex:Tokyo ;
+    owl:topDataProperty "Tokyo",
+        "Tōkyō",
+        "primary" ;
+    owl:topObjectProperty ex:Japan .
+
+rdfs:Literal a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs rdfs:Literal .
+
+owl:topObjectProperty a rdfs:Resource ;
+    owl:sameAs owl:topObjectProperty .
+
+"Bangalore" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Bangalore" .
+
+"Bangkok" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Bangkok" .
+
+"Baoding" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Baoding" .
+
+"Bijie" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Bijie" .
+
+"Bogotá" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Bogotá" .
+
+"Buenos Aires" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Buenos Aires" .
+
+"Cairo" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Cairo" .
+
+"Cangzhou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Cangzhou" .
+
+"Changchun" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Changchun" .
+
+"Changsha" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Changsha" .
+
+"Chengdu" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Chengdu" .
+
+"Chennai" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Chennai" .
+
+"Chicago" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Chicago" .
+
+"Dongguan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Dongguan" .
+
+"Foshan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Foshan" .
+
+"Fuyang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Fuyang" .
+
+"Ganzhou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Ganzhou" .
+
+"Guangzhou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Guangzhou" .
+
+"Handan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Handan" .
+
+"Hangzhou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hangzhou" .
+
+"Hanoi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hanoi" .
+
+"Hefei" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hefei" .
+
+"Hengyang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hengyang" .
+
+"Heze" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Heze" .
+
+"Ho Chi Minh City" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Ho Chi Minh City" .
+
+"Hong Kong" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hong Kong" .
+
+"Huanggang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Huanggang" .
+
+"Istanbul" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Istanbul" .
+
+"Jining" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Jining" .
+
+"Karachi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Karachi" .
+
+"Kunming" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Kunming" .
+
+"Lahore" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Lahore" .
+
+"Linyi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Linyi" .
+
+"London" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "London" .
+
+"Los Angeles" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Los Angeles" .
+
+"Luoyang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Luoyang" .
+
+"Maoming" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Maoming" .
+
+"Mexico City" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Mexico City" .
+
+"Miami" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Miami" .
+
+"Moscow" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Moscow" .
+
+"Mumbai" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Mumbai" .
+
+"Nagoya" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Nagoya" .
+
+"Nanchong" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Nanchong" .
+
+"Nanjing" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Nanjing" .
+
+"Nanning" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Nanning" .
+
+"Nantong" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Nantong" .
+
+"Nanyang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Nanyang" .
+
+"Ningbo" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Ningbo" .
+
+"Onitsha" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Onitsha" .
+
+"Paris" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Paris" .
+
+"Pune" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Pune" .
+
+"Quanzhou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Quanzhou" .
+
+"Riyadh" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Riyadh" .
+
+"Santiago" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Santiago" .
+
+"Shangrao" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shangrao" .
+
+"Shaoyang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shaoyang" .
+
+"Shenyang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shenyang" .
+
+"Shenzhen" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shenzhen" .
+
+"Shijiazhuang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shijiazhuang" .
+
+"São Paulo" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "São Paulo" .
+
+"Tangshan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tangshan" .
+
+"Tehran" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tehran" .
+
+"Tokyo" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tokyo" .
+
+"Tongshan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tongshan" .
+
+"Weifang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Weifang" .
+
+"Wuhan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Wuhan" .
+
+"Xinyang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Xinyang" .
+
+"Yancheng" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Yancheng" .
+
+"Yantai" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Yantai" .
+
+"Yichun" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Yichun" .
+
+"Zhanjiang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Zhanjiang" .
+
+"Zhengzhou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Zhengzhou" .
+
+"Zhoukou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Zhoukou" .
+
+"Zhumadian" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Zhumadian" .
+
+"Zunyi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Zunyi" .
+
+"Ōsaka" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Ōsaka" .
+
+ex:Brazil a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:isCountryOf ex:Rio_de_Janeiro,
+        ex:Sao_Paulo ;
+    ex:iso2Code "BR" ;
+    ex:iso3_code "BRA" ;
+    ex:name "Brazil" ;
+    owl:sameAs ex:Brazil ;
+    owl:topDataProperty "BR" ;
+    owl:topObjectProperty ex:Rio_de_Janeiro,
+        ex:Sao_Paulo .
+
+ex:Nigeria a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:isCountryOf ex:Lagos,
+        ex:Onitsha ;
+    ex:iso2Code "NG" ;
+    ex:iso3_code "NGA" ;
+    ex:name "Nigeria" ;
+    owl:sameAs ex:Nigeria ;
+    owl:topDataProperty "NG" ;
+    owl:topObjectProperty ex:Lagos,
+        ex:Onitsha .
+
+ex:Pakistan a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:isCountryOf ex:Karachi,
+        ex:Lahore ;
+    ex:iso2Code "PK" ;
+    ex:iso3_code "PAK" ;
+    ex:name "Pakistan" ;
+    owl:sameAs ex:Pakistan ;
+    owl:topDataProperty "PK" ;
+    owl:topObjectProperty ex:Karachi,
+        ex:Lahore .
+
+ex:Vietnam a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Hanoi ;
+    ex:isCountryOf ex:Hanoi,
+        ex:Ho_Chi_Minh_City ;
+    ex:iso2Code "VN" ;
+    ex:iso3_code "VNM" ;
+    ex:name "Vietnam" ;
+    owl:sameAs ex:Vietnam ;
+    owl:topDataProperty "VN" ;
+    owl:topObjectProperty ex:Hanoi,
+        ex:Ho_Chi_Minh_City .
+
+ex:isCountryOf a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:isCountryOf,
+        owl:topObjectProperty ;
+    owl:equivalentProperty ex:isCountryOf ;
+    owl:sameAs ex:isCountryOf .
+
+"Beijing" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Beijing" .
+
+"Chongqing" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Chongqing" .
+
+"Dar es Salaam" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Dar es Salaam" .
+
+"Delhi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Delhi" .
+
+"Dhaka" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Dhaka" .
+
+"Guizhou" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Guizhou" .
+
+"Hubei" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hubei" .
+
+"Jakarta" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Jakarta" .
+
+"Khartoum" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Khartoum" .
+
+"Kinshasa" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Kinshasa" .
+
+"Kuala Lumpur" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Kuala Lumpur" .
+
+"Lagos" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Lagos" .
+
+"Lima" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Lima" .
+
+"Luanda" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Luanda" .
+
+"Mahārāshtra" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Mahārāshtra" .
+
+"Manila" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Manila" .
+
+"New York" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "New York" .
+
+"Rio de Janeiro" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Rio de Janeiro" .
+
+"Seoul" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Seoul" .
+
+"Shanghai" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shanghai" .
+
+"Sichuan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Sichuan" .
+
+"Tianjin" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Tianjin" .
+
+"Zhejiang" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Zhejiang" .
+
+ex:Japan a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Tokyo ;
+    ex:isCountryOf ex:Nagoya,
+        ex:Osaka,
+        ex:Tokyo ;
+    ex:iso2Code "JP" ;
+    ex:iso3_code "JPN" ;
+    ex:name "Japan" ;
+    owl:sameAs ex:Japan ;
+    owl:topDataProperty "JP" ;
+    owl:topObjectProperty ex:Nagoya,
+        ex:Osaka,
+        ex:Tokyo .
+
+"Anhui" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Anhui" .
+
+"Hunan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hunan" .
+
+"Jiangxi" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Jiangxi" .
+
+ex:United_States a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:isCountryOf ex:Chicago,
+        ex:Los_Angeles,
+        ex:Miami,
+        ex:New_York ;
+    ex:iso2Code "US" ;
+    ex:iso3_code "USA" ;
+    ex:name "United States" ;
+    owl:sameAs ex:United_States ;
+    owl:topDataProperty "US" ;
+    owl:topObjectProperty ex:Chicago,
+        ex:Los_Angeles,
+        ex:Miami,
+        ex:New_York .
+
+rdf:List a rdfs:Resource ;
+    owl:sameAs rdf:List .
+
+"Jiangsu" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Jiangsu" .
+
+owl:topDataProperty a rdfs:Resource ;
+    owl:sameAs owl:topDataProperty .
+
+"Hebei" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Hebei" .
+
+"Shandong" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Shandong" .
+
+"Guangdong" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Guangdong" .
+
+"Henan" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "Henan" .
+
+ex:India a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:isCountryOf ex:Ahmadabad,
+        ex:Bangalore,
+        ex:Chennai,
+        ex:Delhi,
+        ex:Hyderabad,
+        ex:Kolkata,
+        ex:Mumbai,
+        ex:Pune ;
+    ex:iso2Code "IN" ;
+    ex:iso3_code "IND" ;
+    ex:name "India" ;
+    owl:sameAs ex:India ;
+    owl:topDataProperty "IN" ;
+    owl:topObjectProperty ex:Ahmadabad,
+        ex:Bangalore,
+        ex:Chennai,
+        ex:Delhi,
+        ex:Hyderabad,
+        ex:Kolkata,
+        ex:Mumbai,
+        ex:Pune .
+
+"minor" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "minor" .
+
+"primary" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "primary" .
+
+"admin" a rdfs:Resource,
+        xsd:string ;
+    owl:sameAs "admin" .
+
+xsd:integer a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:integer .
+
+ex:China a ex:Country,
+        rdfs:Resource,
+        owl:Thing ;
+    ex:hasCapital ex:Beijing ;
+    ex:isCountryOf ex:Baoding,
+        ex:Beijing,
+        ex:Bijie,
+        ex:Cangzhou,
+        ex:Changchun,
+        ex:Changsha,
+        ex:Chengdu,
+        ex:Chongqing,
+        ex:Dongguan,
+        ex:Foshan,
+        ex:Fuyang,
+        ex:Ganzhou,
+        ex:Guangzhou,
+        ex:Handan,
+        ex:Hangzhou,
+        ex:Hefei,
+        ex:Hengyang,
+        ex:Heze,
+        ex:Huanggang,
+        ex:Jining,
+        ex:Kunming,
+        ex:Linyi,
+        <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Lu'an>,
+        ex:Luoyang,
+        ex:Maoming,
+        ex:Nanchong,
+        ex:Nanjing,
+        ex:Nanning,
+        ex:Nantong,
+        ex:Nanyang,
+        ex:Ningbo,
+        ex:Quanzhou,
+        ex:Shanghai,
+        ex:Shangrao,
+        ex:Shaoyang,
+        ex:Shenyang,
+        ex:Shenzhen,
+        ex:Shijiazhuang,
+        ex:Tangshan,
+        ex:Tianjin,
+        ex:Tongshan,
+        ex:Weifang,
+        ex:Wuhan,
+        <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Xi'an>,
+        ex:Xinyang,
+        ex:Yancheng,
+        ex:Yantai,
+        ex:Yichun,
+        ex:Zhanjiang,
+        ex:Zhengzhou,
+        ex:Zhoukou,
+        ex:Zhumadian,
+        ex:Zunyi ;
+    ex:iso2Code "CN" ;
+    ex:iso3_code "CHN" ;
+    ex:name "China" ;
+    owl:sameAs ex:China ;
+    owl:topDataProperty "CN" ;
+    owl:topObjectProperty ex:Baoding,
+        ex:Beijing,
+        ex:Bijie,
+        ex:Cangzhou,
+        ex:Changchun,
+        ex:Changsha,
+        ex:Chengdu,
+        ex:Chongqing,
+        ex:Dongguan,
+        ex:Foshan,
+        ex:Fuyang,
+        ex:Ganzhou,
+        ex:Guangzhou,
+        ex:Handan,
+        ex:Hangzhou,
+        ex:Hefei,
+        ex:Hengyang,
+        ex:Heze,
+        ex:Huanggang,
+        ex:Jining,
+        ex:Kunming,
+        ex:Linyi,
+        <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Lu'an>,
+        ex:Luoyang,
+        ex:Maoming,
+        ex:Nanchong,
+        ex:Nanjing,
+        ex:Nanning,
+        ex:Nantong,
+        ex:Nanyang,
+        ex:Ningbo,
+        ex:Quanzhou,
+        ex:Shanghai,
+        ex:Shangrao,
+        ex:Shaoyang,
+        ex:Shenyang,
+        ex:Shenzhen,
+        ex:Shijiazhuang,
+        ex:Tangshan,
+        ex:Tianjin,
+        ex:Tongshan,
+        ex:Weifang,
+        ex:Wuhan,
+        <http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Xi'an>,
+        ex:Xinyang,
+        ex:Yancheng,
+        ex:Yantai,
+        ex:Yichun,
+        ex:Zhanjiang,
+        ex:Zhengzhou,
+        ex:Zhoukou,
+        ex:Zhumadian,
+        ex:Zunyi .
+
+xsd:string a rdfs:Datatype,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs xsd:string .
+
+rdfs:Resource a rdfs:Resource ;
+    owl:sameAs rdfs:Resource .
+
+[] a err:ErrorMessage ;
+    err:error "Disjoint classes http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#City and http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Country have a common individual http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/lab#Hong_Kong" .
+
+[] a err:ErrorMessage ;
+    err:error "Lexical value of the literal 'nan' does not match its datatype (http://www.w3.org/2001/XMLSchema#double)" .
+
