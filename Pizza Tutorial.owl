@@ -226,6 +226,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#InterestingPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#InterestingPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#JalapenoPepperTopping -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#JalapenoPepperTopping">
