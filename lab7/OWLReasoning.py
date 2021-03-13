@@ -54,4 +54,4 @@ def checkEntailment(g, triple):
     
     
 OWLRLInference()
-
+print("hello")
