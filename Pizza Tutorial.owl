@@ -6,7 +6,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial">
+        <rdfs:comment>a tutorial ontology</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -21,9 +23,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasBase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isBaseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasIngredient"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isToppingOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
@@ -31,9 +52,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isBaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isBaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isIngredientOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isToppingOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isToppingOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isToppingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#isIngredientOf"/>
+    </owl:ObjectProperty>
     
 
 
@@ -48,9 +87,237 @@
     
 
 
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AmericanaHotPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AmericanaHotPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#JalapenoPepperTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that only has Mozzarella, Tomato, and Pepperoni toppings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AmericanaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AmericanaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that only has Mozzarella, Tomato, and Pepperoni toppings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AnchovyTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AnchovyTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CaperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CaperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheesyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheesyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheeseTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#DeepPanBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#DeepPanBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaBase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#ThinAndCrispyBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#GreenPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#GreenPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#HamTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#HamTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#JalapenoPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#JalapenoPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MargherittaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MargherittaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that only has Mozzarella and Tomato toppings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#ParmesanTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MushroomTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MushroomTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#ParmesanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#ParmesanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperoniTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperoniTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#Pizza">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -66,6 +333,111 @@
     
 
 
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PrawnTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PrawnTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#RedPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#RedPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SalamiTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SalamiTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SeafoodTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SeafoodTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SohoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SohoPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#OliveTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#ParmesanTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that only has Mozzarella and Tomato toppings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SpicyBeefTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SpicyBeefTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#ThinAndCrispyBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#ThinAndCrispyBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TunaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TunaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SeafoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PizzaTopping"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -74,6 +446,59 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AmericanaHotPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AmericanaPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MargherittaPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SohoPizza"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#AnchovyTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PrawnTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TunaTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CaperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MushroomTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#OliveTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#TomatoTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SeafoodTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#VegetableTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#GreenPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#JalapenoPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#RedPepperTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#HamTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#PepperoniTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SalamiTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zacharias.detorakis/ontologies/2021/2/PizzaTutorial#SpicyBeefTopping"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
