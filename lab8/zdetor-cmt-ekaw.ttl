@@ -1,8 +1,14 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<http://cmt#Acceptance> owl:equivalentClass <http://ekaw#Accepted_Paper> .
+
 <http://cmt#Author> owl:equivalentClass <http://ekaw#Paper_Author> .
 
+<http://cmt#Chairman> owl:equivalentClass <http://ekaw#PC_Chair> .
+
 <http://cmt#Conference> owl:equivalentClass <http://ekaw#Conference> .
+
+<http://cmt#Decision> owl:equivalentClass <http://ekaw#Demo_Session> .
 
 <http://cmt#Document> owl:equivalentClass <http://ekaw#Document> .
 
@@ -14,9 +20,25 @@
 
 <http://cmt#Preference> owl:equivalentClass <http://ekaw#Presenter> .
 
+<http://cmt#Rejection> owl:equivalentClass <http://ekaw#Rejected_Paper> .
+
 <http://cmt#Review> owl:equivalentClass <http://ekaw#Review> .
 
 <http://cmt#assignReviewer> owl:equivalentProperty <http://ekaw#hasReviewer> .
+
+<http://cmt#assignedByAdministrator> owl:equivalentProperty <http://ekaw#organisedBy> .
+
+<http://cmt#endReview> owl:equivalentProperty <http://ekaw#hasReview> .
+
+<http://cmt#hasCo-author> owl:equivalentProperty <http://ekaw#authorOf> .
+
+<http://cmt#hasDecision> owl:equivalentProperty <http://ekaw#hasUpdatedVersion> .
+
+<http://cmt#paperAssignmentFinalizedBy> owl:equivalentProperty <http://ekaw#paperPresentedAs> .
+
+<http://cmt#paperAssignmentToolsRunBy> owl:equivalentProperty <http://ekaw#paperInVolume> .
+
+<http://cmt#readPaper> owl:equivalentProperty <http://ekaw#reviewOfPaper> .
 
 <http://cmt#reviewCriteriaEnteredBy> owl:equivalentProperty <http://ekaw#reviewWrittenBy> .
 

@@ -12,7 +12,19 @@
 
 <http://cmt#Person> owl:equivalentClass <http://confOf#Person> .
 
+<http://cmt#ProgramCommitteeMember> owl:equivalentClass <http://confOf#Member> .
+
+<http://cmt#Rejection> owl:equivalentClass <http://confOf#Reception> .
+
 <http://cmt#Review> owl:equivalentClass <http://confOf#Reviewing_event> .
+
+<http://cmt#email> owl:equivalentProperty <http://confOf#hasEmail> .
+
+<http://cmt#hasConflictOfInterest> owl:equivalentProperty <http://confOf#hasCountry> .
+
+<http://cmt#name> owl:equivalentProperty <http://confOf#hasSurname> .
+
+<http://cmt#reviewerBiddingStartedBy> owl:equivalentProperty <http://confOf#reviewes> .
 
 <http://cmt#title> owl:equivalentProperty <http://confOf#has_title> .
 

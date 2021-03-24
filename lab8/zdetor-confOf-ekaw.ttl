@@ -2,6 +2,8 @@
 
 <http://confOf#Author> owl:equivalentClass <http://ekaw#Paper_Author> .
 
+<http://confOf#Banquet> owl:equivalentClass <http://ekaw#Conference_Banquet> .
+
 <http://confOf#Camera_Ready_event> owl:equivalentClass <http://ekaw#Camera_Ready_Paper> .
 
 <http://confOf#Chair_PC> owl:equivalentClass <http://ekaw#PC_Chair> .
@@ -24,6 +26,8 @@
 
 <http://confOf#Poster> owl:equivalentClass <http://ekaw#Poster_Paper> .
 
+<http://confOf#Registration_of_participants_event> owl:equivalentClass <http://ekaw#Late-Registered_Participant> .
+
 <http://confOf#Regular> owl:equivalentClass <http://ekaw#Regular_Paper> .
 
 <http://confOf#Reviewing_event> owl:equivalentClass <http://ekaw#Review> .
@@ -32,6 +36,10 @@
 
 <http://confOf#Student> owl:equivalentClass <http://ekaw#Student> .
 
+<http://confOf#Topic> owl:equivalentClass <http://ekaw#Research_Topic> .
+
+<http://confOf#Trip> owl:equivalentClass <http://ekaw#Conference_Trip> .
+
 <http://confOf#Tutorial> owl:equivalentClass <http://ekaw#Tutorial> .
 
 <http://confOf#University> owl:equivalentClass <http://ekaw#University> .
@@ -39,6 +47,8 @@
 <http://confOf#Workshop> owl:equivalentClass <http://ekaw#Workshop> .
 
 <http://confOf#hasAdministrativeEvent> owl:equivalentProperty <http://ekaw#hasEvent> .
+
+<http://confOf#hasTopic> owl:equivalentProperty <http://ekaw#coversTopic> .
 
 <http://confOf#reviewes> owl:equivalentProperty <http://ekaw#reviewerOfPaper> .
 
